@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Deskside</title>
+  
+  <subtitle>桌沿是我 | 我是桌沿</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2022-07-25T07:36:17.084Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>从今天开始写博客</title>
+    <link href="http://example.com/2022/07/23/how-to-build-a-personal-blog/"/>
+    <id>http://example.com/2022/07/23/how-to-build-a-personal-blog/</id>
+    <published>2022-07-22T16:00:00.000Z</published>
+    <updated>2022-07-25T07:36:17.084Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>在前几期 Newsletter 中，我向各位读者朋友介绍了我的<a href="https://deskside.github.io/">个人网站</a>，有读者朋友回信咨询如何建立，加上我也想要复盘一下心得和方法，因此就有了这篇文章。</p><p>于我而言，个人网站更像是一个自留地，不受各种算法的影响。我可以尽情地在这里发布、整理文章，不用担心干扰。</p><p>我的个人网站，实际上是「博客」。博客其实是一个互联网非常古早的产物了。在我读小学的时候，我舅舅就经常写新浪博客，甚至来我们家做客的时候，还要关心家里电脑能否联网给他看一下博客。</p><p>但随着互联网发展，博客这种「安静」的信息传递方式已经难以为企业赚钱了，企业纷纷转向了视频、公众号这种「聒噪」的方式，争夺用户的注意力。</p><p>这意味着两件事情：一是现在博客的关注度确实不高，二则是发展多年的博客，技术已经十分平民化了。事实上，无需高深的编程和代码知识，任何会操作电脑的人都能够跟着教程一步一步完成。</p><p>值得一提的是，我们在网上搜到的其他建站教程，有些会宣称「不用一行代码」。事实上，想在由计算机构成的互联网世界有一片自留地、又不依托任何社交平台，必然需要一定量的编程知识。</p><p>当然，如前所述，你不需要学过编程，掌握这些知识也不难。</p><h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><p>事实上，我想先强调一些有关建站的基础：</p><ul><li>坚持写作、拍视频等创作能力。</li><li>使用外网的能力。</li><li>查阅（英文）文档的能力。</li></ul><p>这三个能力，我想缺一不可。关键在于，即使你现在没有也没关系。谁的能力不是慢慢强化得来的呢？我们会在一天天的发展中，逐渐获得并强化这些能力。我逐一解释：</p><p><strong>坚持创作</strong>。建站给人的感觉很酷，但是如果只有一个空壳的话，再酷也不会吸引人长久驻留。</p><p><strong>使用外网</strong>。无论是后文需要使用的 GitHub，还是大部分国际公认的优秀网站，如 Figma、Notion 等，基本都来自于欧美国家（这并非指中国大陆没有优秀的互联网产品）。个中原因不在此分析，只是从结果来看：我们如果不掌握使用外网的能力，将会错过互联网世界的绝大部分美景。</p><p><strong>查阅（英文）文档</strong>。文档通常是一个互联网产品的说明书。至于为什么需要英文能力，和第二点的原因类似，既然众多优秀网站和产品都来自于海外，那在语言上势必优先支持英文。况且，当我们遇到问题时，很多解决方案也是由英文写就的。</p><p>多嘴说一句，我遇到了很多人声称自己「英语不好」，听来只觉痛心。语言并非天堑鸿沟，退一万步说，我们每个人都至少熟练掌握了一门语言：中文（普通话或方言）。只要多运用，任何语言都会逐渐成为我们身体的一部分。因此，别再说自己英语不好了，不如说自己「英语暂时不熟悉，还需要多说多看」。</p><p>我并非计算机系，未经过系统的专业化训练。在以下教程中，可能会出现错误，还请海涵和指正。本文会同步发表于个人网站，如需更好的代码复制体验可以移步此处。</p><hr><p>在第一章的最后，我想分享编程区 up 主 Codesheep 在视频<a href="https://www.bilibili.com/video/BV1Yb411a7ty?spm_id_from=333.1007.top_right_bar_window_history.content.click">手把手教你从0开始搭建自己的个人博客</a>中说过的一句话：</p><blockquote><p>不要怕遇到问题，因为你一定会遇到问题。没关系，解决问题就好了。</p></blockquote><p>我在 2020 年的时候也曾经尝试建立个人博客，预期太高、以为会很顺利，结果一直不断遇到一些小问题，感觉受挫、没一会儿就放弃了。不久前刷到了技术博主的视频，这句话给了我很大的信心和勇气。</p><p>每个人的电脑配置、网络环境各有差异，你一定会遇到大大小小的问题。没关系，遇到问题就去寻找解决方案，逐个尝试后，解决掉就好了！</p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>正常来说，以下安装过程适用于 Windows、macOS、Linux。</p><p>与网上能找到的绝大多数相似教程相比，我更想用一种诗意的比喻方式来我们可以将最终的网站成品类比为「一个装饰精美的储物盒，盒子里装着一沓纸」。</p><h3 id="打造工作台：构筑环境"><a href="#打造工作台：构筑环境" class="headerlink" title="打造工作台：构筑环境"></a>打造工作台：构筑环境</h3><p>首先，构筑环境。我们需要一个「工作台」来加工和维护储物盒。如果我们的工作间是我们的电脑，那工作台便是 <a href="https://nodejs.org/en/">Node.js</a> 和 <a href="https://git-scm.com/download/win">Git</a> 。你不需要理解它们的原理，但我们需要在电脑里安装它们。</p><p>请分别点击链接进入二者的官网，网页一般会默认提供适配当前电脑的下载选项。</p><ul><li>Node.js 请选择左边的绿色方框下载。</li><li>Git 请选择 Standalone Installer 中的 64-bit Git for Windows Setup（如果你知道自己的电脑是 32 位版本，请选择 32-bit Git for Windows Setup）。</li></ul><h3 id="找到好工具：使用终端"><a href="#找到好工具：使用终端" class="headerlink" title="找到好工具：使用终端"></a>找到好工具：使用终端</h3><p>有了工作台，有了目标，我们还需要一个趁手的扳手来执行操作。无论是什么系统，每台电脑都提供了这个扳手，那就是「<a href="https://sspai.com/post/45534">终端</a>」。</p><p>终端实际上是我们与电脑「直接沟通」的中介，平常我们用电脑时的各种软件其实是我们与电脑「间接沟通」的中介。</p><p>终端无需额外下载，你可以在搜索中（Windows 中敲击 win+s，macOS 中敲击 command+space）输入终端二字打开。你可以考虑<a href="https://docs.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell?view=powershell-7.2">在 Windows、Linux 和 macOS 上安装 PowerShell</a>，对 Windows 用户的体验优化很明显。</p><p>终端实际上是在特定文件夹内的操作，因此在你的输入位置前总是有一行文件路径名。因此，有两个命令很重要。（#号后面为注释内容，请不要在终端中输入#号后面的内容，下同）</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd folderName #进入名为folderName的子文件夹中</span><br><span class="line">cd..          #返回上级文件夹</span><br></pre></td></tr></table></figure><h3 id="先打造外框：博客框架"><a href="#先打造外框：博客框架" class="headerlink" title="先打造外框：博客框架"></a>先打造外框：博客框架</h3><p>一个储物盒，如果没有稳定的框架，势必会散架。对于博客而言，框架便是 <a href="https://hexo.io/zh-cn/index.html">Hexo</a> 。</p><p>Hexo 自 2012 年发布以来，已经稳定提供服务 10 年，由台北人陳嘉輝（Tommy Chen）编写。基本上，如果你想要搭建博客，框架不是选择 Hexo 便就是 Hugo，足以证明其强大。</p><p>与我们日常安装软件不同，Hexo 的安装只需要一行代码即可。但是，在哪里输入代码呢？</p><p>我们可以在任意位置新建文件夹，右键菜单中选择「在终端中打开」。以下所有代码，每一行输入后需敲击一次 Enter 键。</p><p>在弹出的窗口中，我们逐行输入以下代码，检查工作台是否搭建好了（检查 Node.js 和 Git 是否安装好了）。如果分别出现一行版本号，即安装完毕。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v #检查node版本</span><br><span class="line">npm -v  #检查npm版本</span><br></pre></td></tr></table></figure><p>由于国内网络环境限制，电脑访问外网通常非常缓慢。我们需要将工作台改为中国大陆版本（即更改镜像源）。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure><p>紧接着，确认工作台无误后，我们便可以先打造好博客框架了（安装Hexo）。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure><p>我们同样需要检查我们的博客框架是否打造好了（检查Hexo安装情况）。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure><h3 id="开始造盒子：建储物盒"><a href="#开始造盒子：建储物盒" class="headerlink" title="开始造盒子：建储物盒"></a>开始造盒子：建储物盒</h3><p>框架已经完成，意味着我们拥有了建储物盒的模具。我们便可以使用模具来创建第一个储物盒。</p><p>你可以在你电脑的任意位置新建文件夹，既然我们要建立个人博客，那就起名「blog」吧！随后，在「blog」文件夹内，右键菜单中选择「在终端中打开」。以上操作，你也可以在终端中输入以下代码代替：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog      # 初始化创建，会在你所在位置创建 blog 文件夹</span><br><span class="line">cd blog             # 进入 blog 目录</span><br><span class="line">npm install         # 进一步安装hexo所需文件</span><br></pre></td></tr></table></figure><p>稍等一会儿，略显粗糙的第一个储物盒就建好了！</p><p>什么，你没看到？仔细看看刚才的文件夹，里面应该出现了不少文件。这些配置文件便构筑起了我们的储物盒。回到终端里，继续输入：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean          # 清除所有记录</span><br><span class="line">hexo generate       # 生成静态网页</span><br><span class="line">hexo s              # 启动服务，默认端口号是4000</span><br></pre></td></tr></table></figure><p>接下来，我们使用浏览器打开 <a href="http://localhost:4000/">http://localhost:4000/</a> ，便可以看到一个默认的储物盒了。</p><h3 id="自定义外观：博客主题"><a href="#自定义外观：博客主题" class="headerlink" title="自定义外观：博客主题"></a>自定义外观：博客主题</h3><p>我们都喜欢好看的东西，对于网站亦如此。随着 Hexo 这么多年的发展，来自全球的开发者已经为其创造了 <a href="https://hexo.io/themes/">300 多个风格各异的主题</a>，足够让你挑花眼。</p><p>你可以随意浏览。点击图片可以进入该主题的范例网站，点击标题可以进入该主题的 GitHub 页面。GitHub 页面中一般会写明安装方法和配置要求。实际上，安装方法无外乎两种：</p><p>第一种，在 GitHub 页面中点击蓝色的 Code 按钮，选择「Download ZIP」，下载包含该主题所有代码的文件。解压后放入我们的「blog」文件夹中的「themes」中（下文将使用「blog&#x2F;themes」表达相同意思）。</p><p>第二种，在使用一行代码，从终端直接同步该主题的所有代码。通常在博客的Github页面都会写明如何安装。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone xxx themes/yyy</span><br><span class="line"># xxx通常为该Github页面的网址</span><br><span class="line"># yyy通常为该Hexo主题的名字</span><br></pre></td></tr></table></figure><p>值得注意的是，如果你遇到了 GitHub 访问很慢、无法git clone的情况，你可以采取「曲线救国」的策略。Gitee 是国内类似 Github 的代码托管网站，注册后，在「+」中选择「从 Github&#x2F;Gitlab 中导入仓库」，输入你想要的Github网址。</p><p>安装好之后的下一步，是配置。即在各个主题提供的范围内进行自定义。每个主题都各有不同，在这里无法逐一介绍。请发挥前述提到的第三个能力，根据主题的 GitHub 中的 README 文档，完成该任务吧！</p><p>值得强调的是，丰富的主题其实是一把双刃剑，好处是我们可以为网站精挑细选主题，但坏处便是我们很容易深陷其中、舍本逐末。好的网站，最重要的并不是外观，而是内容。如果没有扎实、吸引人的内容，访客的鼠标只会快速点击「关闭」键，和你说再见。</p><p>我的<a href="https://deskside.github.io/">个人网站</a>目前看起来非常有模有样，很大一部分原因是我已经在前期有了长足的文章积累。在完成前面的步骤之后，我其实只需要将文章复制粘贴生成即可，</p><h3 id="向世界发布：部署网站"><a href="#向世界发布：部署网站" class="headerlink" title="向世界发布：部署网站"></a>向世界发布：部署网站</h3><p>部署（deploy），听起来很高级，但是我们可以理解为将博客从本地发布到云端，让我们可以通过一行网址访问。</p><p>由于该部分内容并不难，请参阅<a href="https://easyhexo.com/1-Hexo-install-and-config/1-4-deploy-hexo.html#%E9%83%A8%E7%BD%B2%E5%88%B0-github">部署 Hexo | Easy Hexo 👨‍💻</a>的教程进行配置。</p><p>出于安全性考虑，GitHub 应该会要求用户提供 SSHkey，你可以理解为电脑和 GitHub 之间的「暗号」，请参阅<a href="https://www.runoob.com/w3cnote/view-ssh-public-key.html">查看本机 ssh 公钥，生成公钥</a>。</p><p>值得一提的是，我并不推荐你部署到国内代码托管网站，如 Gitee。不推荐的理由是老生常谈了：审查机制。以 Gitee 为例，每一次网址重新发布，用户都必须进入 Gitee 手动点击部署，十分麻烦。除此之外，Gitee 会使用机器以不明朗的规则审查文字，十分正常的内容也可能被判定违规、不予部署。</p><p>当然，Gitee 的（唯一）好处是国内访问速度很快。相比之下，GitHub 作为真正开源的国际网站，在国内访问速度并不稳定。请自行斟酌考量部署网站的选择。</p><p>如果你具有更强的能力可以将博客部署到自己的服务器、域名之上，那自然是再好不过了。即便没有，使用 GitHub 等网站提供的部署服务也非常方便优雅。</p><h2 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h2><h3 id="我怎么写"><a href="#我怎么写" class="headerlink" title="我怎么写"></a>我怎么写</h3><p>所有的博客文章，我们都可以在本地的<code>博客文件夹名字/source/_post</code>中看到，并且会以 <code>.md</code>格式存在，md 是 markdown 的缩写。</p><p>如果你完全不知道 markdown 是什么，那么你必须先阅读<a href="https://sspai.com/post/25137">认识与入门 Markdown</a>，了解 markdown 的常用语法。别担心，这不仅学起来很简单，学会之后，也会让我们以后的文字处理都变得简单起来。</p><p>如果你对常用 markdown 语法有所遗忘，请随时查阅<a href="https://markdown.com.cn/cheat-sheet.html#%E6%80%BB%E8%A7%88">Markdown 语法速查表</a>。</p><p>如果你想选择一款好用的 markdown 编辑器，你可以在这些<a href="https://markdown.com.cn/tools.html#%E7%BC%96%E8%BE%91%E5%99%A8">Markdown 工具</a>中进行选择。当然，电脑自带的纯文本工具（即记事本或文本编辑）其实也完全足以编辑，只不过无法对你写下来的 markdown 语法进行即时渲染。</p><p>当你想要新建一篇文章时，你可以二选一：</p><ul><li>直接在前述文件夹中右键新建md文件，并编辑其中的内容。</li><li>使用终端命令 <code>hexo new post xxx</code>，xxx为博客网址名。</li></ul><h3 id="基础信息"><a href="#基础信息" class="headerlink" title="基础信息"></a>基础信息</h3><p>每篇 hexo 文章都会需要一个 front-matter，用以告知这篇文章的基础信息是什么。通常而言，「标题、日期、标签、分类」即足矣。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: xxx</span><br><span class="line">date: 2022-7-23</span><br><span class="line">tag: [a,b,c]</span><br><span class="line">categories: yyy</span><br><span class="line">---</span><br></pre></td></tr></table></figure><p>如果你还想了解更多，请参阅<a href="https://hexo.io/zh-cn/docs/front-matter">Front-matter | Hexo</a>。值得注意的是，每个主题通常都会提供一些特殊的信息用以配置 front-matter，你通常可以在主题的 GitHub 页面中找到配置指南。</p><h3 id="多台电脑"><a href="#多台电脑" class="headerlink" title="多台电脑"></a>多台电脑</h3><p>如果你拥有两台及以上的电脑，希望每台电脑上你都可以编辑博客内容并发布，你可以参阅<a href="https://www.jianshu.com/p/4bcf2848b3fc">多台电脑使用Hexo</a>。过程很简单，因此在此不再复述。</p><h2 id="彩蛋：插入-B-站或-YouTube-视频"><a href="#彩蛋：插入-B-站或-YouTube-视频" class="headerlink" title="彩蛋：插入 B 站或 YouTube 视频"></a>彩蛋：插入 B 站或 YouTube 视频</h2><h3 id="基础操作"><a href="#基础操作" class="headerlink" title="基础操作"></a>基础操作</h3><p>绝大部分的 Hexo 主题，都支持通过一行复制粘贴的代码嵌入 B 站或 YouTube 的视频，非常适合视频创作者来构建自己的个人网站。那么，这行神奇的代码从哪里复制来呢？</p><p>很简单，用浏览器打开任意你想要嵌入的视频，找到分享按钮里的「嵌入」键，拷贝由 B 站或 YouTube 提供的这行代码，并将这行代码粘贴到博客文章中去。当然，不只限于这两个视频网址，任何提供嵌入代码的视频网站都可以。</p><p>重新渲染博客后，打开对应页面，你就可以看到一个可以直接在网页内点击播放的视频了！</p><h3 id="时分跳转"><a href="#时分跳转" class="headerlink" title="时分跳转"></a>时分跳转</h3><p>涉及视频插入的场景，我们常常会想要指明几分几秒。比如我们想要插入一个教程，但我们想特别注明只需从第 2 分 30 秒开始看就好了。那我们应该如何操作呢？</p><p>对于 Youtube 视频，非常简单，嵌入功能原生支持设置时间节点。我们只需要在嵌入界面设置「2:30」或「150」即可，前者为几分几秒，后者为秒数，二者等效。</p><p>对于B站视频，则显得稍微麻烦些许。我们需要在提供的代码中的「src」引号内的最后添加上「&amp;t&#x3D;02m30s」。如果视频有多个分p，你可以添加「p&#x3D;2&amp;t&#x3D;02m30s」，用以表示跳转至第2部分的第2分30秒。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># B站提供的视频嵌入代码</span><br><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">&quot;//player.bilibili.com/player.html?aid=291374696&amp;bvid=BV1uf4y1b7R8&amp;cid=360416569&amp;page=1&quot;</span> <span class="attr">scrolling</span>=<span class="string">&quot;no&quot;</span> <span class="attr">border</span>=<span class="string">&quot;0&quot;</span> <span class="attr">frameborder</span>=<span class="string">&quot;no&quot;</span> <span class="attr">framespacing</span>=<span class="string">&quot;0&quot;</span> <span class="attr">allowfullscreen</span>=<span class="string">&quot;true&quot;</span>&gt;</span> <span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br><span class="line"></span><br><span class="line"># 在「src」引号内的最后添加「&amp;t=02m30s」</span><br><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">&quot;//player.bilibili.com/player.html?aid=291374696&amp;bvid=BV1uf4y1b7R8&amp;cid=360416569&amp;page=1&amp;t=02m30s&quot;</span> <span class="attr">scrolling</span>=<span class="string">&quot;no&quot;</span> <span class="attr">border</span>=<span class="string">&quot;0&quot;</span> <span class="attr">frameborder</span>=<span class="string">&quot;no&quot;</span> <span class="attr">framespacing</span>=<span class="string">&quot;0&quot;</span> <span class="attr">allowfullscreen</span>=<span class="string">&quot;true&quot;</span>&gt;</span> <span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure><h3 id="宽高调整"><a href="#宽高调整" class="headerlink" title="宽高调整"></a>宽高调整</h3><p>在具体的网页渲染中，我们还可以指明播放器的宽度和高度。</p><p>无论是 YouTube 还是 B 站提供的播放器，我们都可以在第一个括号内加上一段代码，这样子我们便可以自定义播放器的宽高了。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 添加宽高参数以前</span><br><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">&quot;//player.bilibili.com/player.html?aid=291374696&amp;bvid=BV1uf4y1b7R8&amp;cid=360416569&amp;page=1&amp;t=02m30s&quot;</span> <span class="attr">scrolling</span>=<span class="string">&quot;no&quot;</span> <span class="attr">border</span>=<span class="string">&quot;0&quot;</span> <span class="attr">frameborder</span>=<span class="string">&quot;no&quot;</span> <span class="attr">framespacing</span>=<span class="string">&quot;0&quot;</span> <span class="attr">allowfullscreen</span>=<span class="string">&quot;true&quot;</span>&gt;</span> <span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br><span class="line"></span><br><span class="line"># 添加宽高参数以后，注意每个参数之间需要有空格</span><br><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">&quot;//player.bilibili.com/player.html?aid=291374696&amp;bvid=BV1uf4y1b7R8&amp;cid=360416569&amp;page=1&amp;t=02m30s&quot;</span> <span class="attr">scrolling</span>=<span class="string">&quot;no&quot;</span> <span class="attr">border</span>=<span class="string">&quot;0&quot;</span> <span class="attr">frameborder</span>=<span class="string">&quot;no&quot;</span> <span class="attr">framespacing</span>=<span class="string">&quot;0&quot;</span> <span class="attr">allowfullscreen</span>=<span class="string">&quot;true&quot;</span> <span class="attr">width</span>=<span class="string">&quot;100%&quot;</span> <span class="attr">height</span>=<span class="string">&quot;300&quot;</span>&gt;</span> <span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure><p>你可以输入两种类型的值来定义宽或高：</p><ul><li>百分比，即播放器占浏览器的百分比。如「width&#x3D;”100%”」。</li><li>纯数字，即像素值。如「height&#x3D;”300”」。</li></ul><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>到此为止，我的一个小梦想已经圆了：建立个人网站。</p><p>于我而言，在互联网上有一个自己的域名，打开后装满了自己设计和书写的内容，带来的成就感和满足感还是很强的。</p><p><strong>接下来，就是你创作的过程了！</strong></p><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul><li><a href="https://www.bilibili.com/video/BV1Yb411a7ty?spm_id_from=333.1007.top_right_bar_window_history.content.click">手把手教你从0开始搭建自己的个人博客</a></li><li><a href="https://www.jianshu.com/p/4bcf2848b3fc">多台电脑使用Hexo</a></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;在前几期 Newsletter 中，我向各位读者朋友介绍了我的&lt;a href=&quot;https://deskside.github.io/&quot;&gt;个</summary>
+      
+    
+    
+    
+    <category term="开发笔记" scheme="http://example.com/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="自己" scheme="http://example.com/tags/%E8%87%AA%E5%B7%B1/"/>
+    
+    <category term="开发" scheme="http://example.com/tags/%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>三年健身回顾</title>
+    <link href="http://example.com/2022/07/13/workout-review/"/>
+    <id>http://example.com/2022/07/13/workout-review/</id>
+    <published>2022-07-12T16:00:00.000Z</published>
+    <updated>2022-07-14T03:27:52.187Z</updated>
+    
+    <content type="html"><![CDATA[<p>从2019-8-1开始算起的话，至今健身已经快三年了。在此总结和分析一下这三年的经验教训。</p><p><strong>这三年的训练情况：</strong></p><ul><li>因为这三年中途断断续续有停止的情况，所以训练并不是很连贯。</li><li>三年都没有去健身房，我并不是很想去健身房练，一是想省钱，二是更喜欢在家里锻炼、觉得去健身房很麻烦，三是恰逢毕业、工作换城市，开卡并不是一个很好的选择。我在家和宿舍都有可更换重量的哑铃。</li><li>感觉还是不太有章法，训练起来比较草率，也缺乏目的性、计划性。</li><li>睡眠质量、时长不太有保障，而且2021年全年经常熬夜，导致皮肤状况和健身效果都不太好。</li><li>虽然想要控制饮食，但基本上没做到。主要因为我经常外出就餐导致卡路里计算很麻烦。</li></ul><p><strong>到目前为止的训练效果：</strong></p><ul><li>因为最初训练的时候缺乏目的性，因此在这里可以分类讨论一下。<ul><li>如果以保持健康和正常体态为目的，比较成功，这几年成功地瘦了下来，而且一直维持在65kg左右的体重。</li><li>如果以爱上运动为目的，比较成功，运动三年，一方面更自信了，一方面更喜欢运动或健身了，身体素质也有提升，平时也会</li><li>如果以六块腹肌为目的，不太成功，腹部脂肪堆积比较严重，腹部没有减下去。</li><li>如果以全身增肌为目的，不太成功，除了腹部，大腿后侧脂肪堆积很严重，明显软塌塌的一大块，以及手臂的肌肉线条也出不来。</li></ul></li></ul><p><strong>下一阶段的计划：</strong></p><ul><li>之前一直试图自己记录健身数据，但是总是因为太过复杂或繁琐而放弃，今天购买了训记App，希望下一阶段能用好。</li><li>控制饮食应该还是最重要的事情。</li><li>提早睡眠。</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;从2019-8-1开始算起的话，至今健身已经快三年了。在此总结和分析一下这三年的经验教训。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这三年的训练情况：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;因为这三年中途断断续续有停止的情况，所以训练并不是很连贯。&lt;/li&gt;
+&lt;li&gt;三年都没有</summary>
+      
+    
+    
+    
+    <category term="饮食、睡眠与健康" scheme="http://example.com/categories/%E9%A5%AE%E9%A3%9F%E3%80%81%E7%9D%A1%E7%9C%A0%E4%B8%8E%E5%81%A5%E5%BA%B7/"/>
+    
+    
+    <category term="健身" scheme="http://example.com/tags/%E5%81%A5%E8%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>已解决 zsh command not found (macOS)</title>
+    <link href="http://example.com/2022/07/08/zsh-command-not-found/"/>
+    <id>http://example.com/2022/07/08/zsh-command-not-found/</id>
+    <published>2022-07-07T16:00:00.000Z</published>
+    <updated>2022-07-10T02:48:32.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>因为需要制作个人网站和文档，我电脑中需要安装 node.js（包含 npm）和 git。</p><p>顺利安装后，运行如下指令，使用 npm 安装 hexo 和 docsify 都没有问题，十分顺利。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">npm i docsify-cli -g</span><br></pre></td></tr></table></figure><h2 id="遇到问题"><a href="#遇到问题" class="headerlink" title="遇到问题"></a>遇到问题</h2><p>但是，在安装完成后，准备开始使用 hexo 和 docsify 的时候，所有相关指令都无法使用，终端会给出如下错误。（请注意我使用的是 macOS 系统）</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 假如我运行 docsify 相关指令</span><br><span class="line">docsify init</span><br><span class="line">zsh command not found:docsify</span><br><span class="line"></span><br><span class="line"># 假如我运行 hexo 相关指令</span><br><span class="line">hexo s</span><br><span class="line">zsh command not found:hexo</span><br></pre></td></tr></table></figure><p>我在网上查了好久，但那是相关的解决措施都很「高级」……作为一个编程小白，我真的很茫然，完全看不懂。</p><p>所幸在一番折腾后，我终于解决了这个问题。接下来我将解决方案和过程分享给你，希望能发挥效果。</p><h2 id="理解Terminal、Shell"><a href="#理解Terminal、Shell" class="headerlink" title="理解Terminal、Shell"></a>理解Terminal、Shell</h2><p>首先，我们需要理解zsh是什么，以及有什么用。（没错，我连这个都不知道是什么！）</p><p>zsh全名为Z-shell，本质即是Shell。听起来很复杂，别着急，请继续看。</p><p>我们日常在使用电脑的时候，比如聊微信、打游戏、看网页，实际上是通过开发者设计好的用户界面（User Interface, UI）在与电脑交互，是一种间接沟通方式，但胜在图文并举、直观易懂。</p><p>但如果我们想要更直接地与电脑交互，我们便需要另一个工具，这便是终端（Terminal）。终端可以直接与计算机的内核（Kernel）沟通，是一种直接沟通方式，但往往需要具备一定的计算机知识，否则看到纯文字的界面会很茫然。</p><p>终端想要与计算机沟通时，不能直接与内核沟通，否则一旦用户错误操作，整个计算机就会崩溃。因此，我们还需要一个中介，用来接受用户输入的命令，并由其与内核沟通，这便是Shell（壳层）。</p><p>Shell有很多种，比如bash、csh、tcsh等，你会发现它们都以shell的缩写「sh」结尾。</p><p>因此，前述终端中报错，实际上是zsh在告诉我们：「虽然你用npm安装了相关程序，但是我找不到呀，你得告诉我文件路径在哪里哦！」</p><h2 id="解决问题"><a href="#解决问题" class="headerlink" title="解决问题"></a>解决问题</h2><p>既然理解了问题，那我们就可以着手开始解决问题。</p><p>首先，我们需要找到zsh的配置文件，在终端中输入以下指令应该能打开：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">open ~/.zshrc</span><br></pre></td></tr></table></figure><p>如果终端反馈找不到该文件，或者有错，请你使用Finder打开用户文件夹（我的文件夹为joeysimac），并按下<code>command+shift+.</code>，显示隐藏文件夹。如果你不知道你的用户文件夹路径是多少，请重启终端并输入以下指令，终端会告诉你当前路径。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pwd</span><br><span class="line"># 我的程序返回了如下指令</span><br><span class="line">/Users/joeysimac</span><br></pre></td></tr></table></figure><p>打开文件后，应该会有一行大致如下的文字：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export PATH=$HOME/bin:/usr/local/bin:$PATH</span><br></pre></td></tr></table></figure><p>其中以<code>:</code>断开的便是不同的<code>/bin路径</code>，请记住这几个不同的路径，接下来可能会用到。</p><p>因为 macOS 从 Catalina 版开始，其默认 shell 从 bash 改为 zsh。因此，你需要找到<code># User configuration</code>，在其下方加入一行代码，告知zsh「之前bash的相关配置你可以用哦」。最终效果如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># User configuration</span><br><span class="line">source ~/.bash_profile</span><br></pre></td></tr></table></figure><p>其次，我们需要知道刚刚通过npm全局安装好的程序（以hexo为例），它现在具体在什么地方。</p><p>因为我是使用npm安装的，所以通常而言，安装好的程序应该会在<code>/Users/joeysimac/.npm-global/bin</code>这个文件夹中。</p><p>因此，我们需要将hexo现在的位置<code>/Users/joeysimac/.npm-global/bin/hexo</code>告诉zsh。请将下列路径替换为你自己的路径，然后在终端中输入。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo ln -s 你的程序路径 /bin路径</span><br><span class="line"># 示例：sudo ln -s /Users/joeysimac/.npm-global/bin/hexo /usr/local/bin</span><br></pre></td></tr></table></figure><p>如果发生错误，请尝试将<code>/bin路径</code>更换为前述的其他路径。</p><p>最后，为了使配置文件立刻生效，我们需要在终端中输入：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~/.zshrc</span><br></pre></td></tr></table></figure><p>到此为止，你可以试着重启终端，试着运行相关程序。依旧以hexo为例，逐行敲入下列代码，看看终端是否能正常运行。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure><h2 id="复盘"><a href="#复盘" class="headerlink" title="复盘"></a>复盘</h2><p>这是我第一次撰写技术向文章，因为我本身并非计算机专业，也未系统学习过编程，单纯只是感兴趣，算是纯小白了。无论学习哪种语言，学习编程的道路都不会一帆风顺。</p><p>遇到问题卡壳了，那就尝试转换心情去完成别的任务吧，很多难题往往在散步的过程中灵感迸发就解决了，或者睡一觉之后脑子就想通了。</p><p>从积极的角度而言，遇到问题说明我们有了收获新知识的可能性，这难道不可喜可贺吗！</p><hr><p>参考文献：</p><ul><li><a href="https://blog.csdn.net/u010954988/article/details/80404329#:~:text=%22%20zsh%3A%20command%20not%20found%3A%20%22%E8%BF%99%E4%B8%AA%E9%94%99%E8%AF%AF%E7%9B%B8%E4%BF%A1%E5%A4%A7%E5%AE%B6%E9%83%BD%E4%B8%8D%E9%99%8C%E7%94%9F%EF%BC%8C%E4%BB%A5%E5%89%8D%E6%AF%8F%E6%AC%A1%E9%81%87%E5%88%B0%E8%BF%99%E4%B8%AA%E9%97%AE%E9%A2%98%E9%83%BD%E6%98%AFGoogle%E4%B8%80%E4%B8%8B%EF%BC%8C%E7%84%B6%E5%90%8E%E5%91%8A%E8%AF%89%E4%BD%A0%E5%9C%A8,xxx%20%E6%96%87%E4%BB%B6%E6%B7%BB%E5%8A%A0%20xxx%20%E6%96%87%E5%AD%97%EF%BC%8C%E6%88%96%E8%80%85%E5%9C%A8Terminal%E8%BF%90%E8%A1%8C%20xxx%20%E5%91%BD%E4%BB%A4%E5%8D%B3%E5%8F%AF%EF%BC%8C%E6%9C%89%E4%BA%9Bwork%EF%BC%8C%E6%9C%89%E4%BA%9B%E4%B8%8D%E8%A1%8C%E3%80%82">zsh: command not found from CSDN</a></li><li><a href="https://blog.csdn.net/qq_33833327/article/details/78086973">Mac ln命令报错：Operation not permitted</a></li><li><a href="https://www.jianshu.com/p/a891af6f87e0">shell有哪些？Zsh和Bash的区别是什么？</a></li><li><a href="https://sspai.com/post/45534">玩转 Terminal 终端：入门指南及进阶技巧</a></li><li><a href="https://www.cnblogs.com/sddai/p/9769086.html">命令行界面 (CLI)、终端 (Terminal)、Shell、TTY的区别 - stardsd - 博客园 (cnblogs.com)</a></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;因为需要制作个人网站和文档，我电脑中需要安装 node.js（包含 npm）和 git。&lt;/p&gt;
+&lt;p&gt;顺利安装后，运行如下指令，使用 npm 安装 hexo 和 docsify 都没有问题，十分顺利。&lt;/p&gt;
+&lt;figure class=&quot;highlight plaint</summary>
+      
+    
+    
+    
+    <category term="开发笔记" scheme="http://example.com/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="编程" scheme="http://example.com/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="挑战" scheme="http://example.com/tags/%E6%8C%91%E6%88%98/"/>
+    
+    <category term="困难" scheme="http://example.com/tags/%E5%9B%B0%E9%9A%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一起来打破日记吧！</title>
+    <link href="http://example.com/2022/07/03/break-traditional-diary/"/>
+    <id>http://example.com/2022/07/03/break-traditional-diary/</id>
+    <published>2022-07-02T16:00:00.000Z</published>
+    <updated>2022-07-13T02:33:12.716Z</updated>
+    
+    <content type="html"><![CDATA[<p>你还记得初高中那段时间的小心思吗？</p><p>那些对喜欢的人小心翼翼的关注，害怕被同学孤立或讨厌的忧心，害怕自己进步得太慢的焦虑……所有的小心思都在身体里翻涌，在夜色下辗转，在阳光下焦灼。作为学生，我们大多会选择一种成本最低的方式，将这些心绪排解——写日记。</p><p>或许，只有当偶尔打开装满了初高中旧物的盒子时，我们才会意识到初高中时的自己每天有多少心绪在涌动。于我而言，我有好几个大开本的本子都被写满了，那些细碎、隐秘又青涩的想法就这么被沉淀下来。彼时的我，大部分的心思都不敢付诸实践，更不敢与人言说，但总归需要一个出口将其宣泄。</p><p>无独有偶，现在B站有一类视频很多博主都在做，那就是「翻阅当年的同学录&#x2F;日记」。一方面，和小时候的自己相比，绝大多数人都成长了很多，当年的那些烦恼大多已付笑谈，岁月给人带来的变化让人着迷。</p><p>另一方面，人类是记忆的生物。似乎当年龄迈过 20 的坎后，我们都开始喜欢「追忆当年」了。每次朋友聚会总是会聊到往事，而每次聊到又都会让大家开怀一笑。</p><h2 id="当日记不再是日记"><a href="#当日记不再是日记" class="headerlink" title="当日记不再是日记"></a>当日记不再是日记</h2><p>我妈时常鼓励我多写日记，因为「不写下来就会忘了」。长期以来，我对日记的态度也大致如此。</p><p>在写日记这件事上，我并没能长期坚持，但也并非半途而废，要找一个词来形容，那或许就是「间歇性写日记」吧！</p><p>我总是隔一段时间就会对写日记热情高涨，每天都会抽出时间来写日记，但是在保持记录一段时间后又会消沉下去，接着又进入下一次循环。</p><p>究其原因，我想，这或许是我对「日记」的刻板印象在作祟。</p><p>我总认为写日记就像写流水账，要尽量事无巨细地将自己从早到晚的活动都追踪到位。可想而知，纯粹的流水账十分耗时，一天的流水账至少得写20分钟；不仅如此，流水账写起来很无聊、读起来更无聊，甚至还不如小学生日记有意思，写完之后，大多数人再也不会翻开。</p><p>因此，如果只是为了「记住事情」，流水账日记未免显得有些无用功了。日记必须是对今天的追踪记录吗？</p><hr><p>除了写日记之外，我还是一个狂热的记录爱好者。我喜欢追踪和记录很多东西：睡眠状况、财务流水、健身内容、看过的书、观过的影、和对象的日常、情绪变化、小成就、便便情况。总之，只要我感兴趣，我就会试着将其记录下来。</p><p>随着记录的内容、种类变多，我逐渐发现「日记」只是记录自己的一种方式，或许和发朋友圈、微博、即刻、flomo、视频 vlog 等类似，只是形式不同，但更有隐私。</p><p>换言之，我们没有必要「将鸡蛋装在同一个篮子里」。试着打破固有认知，日记不必只有一种形式，它为什么不可以是多种形式的集合呢？</p><h2 id="打破传统日记的限制"><a href="#打破传统日记的限制" class="headerlink" title="打破传统日记的限制"></a>打破传统日记的限制</h2><p>在我的理解中，传统日记大概会有如下特征：一天一篇、流水化记录、每天挑固定时间写……</p><p>如此，传统日记很难不显得呆板、费时又无趣。想要打破传统日记，其实非常简单：那就是要想清楚自己为什么要记录日记。这实际上便是要求自己想清楚：我希望通过「写日记」给自己带来什么好处？</p><p>因此，如果你能从纯粹的记录中获得乐趣，那么即使你写完后再也不打开日记本，也没有关系。在这种情况下，写日记的目的已经达到了，不是吗？</p><p>根据自己的需求，我们便可以将传统日记打破成任意「形状」。自己想要记录什么，就将记录的内容视为「今天的日记」的一个组成部分。</p><p>比如，小桌子是一位健身爱好者，他有个专门的本子对健身进行记录，而且他每天都会拍下自己的三餐发朋友圈，他每天还会在给对象发消息，告诉他自己今天做了什么。那么，我们不妨就把小桌子的日记看成「健身记录本+餐饮记录朋友圈+聊天记录里的行程动态」。小桌子不必再专门在晚上腾出时间来写日记，任何一天他想要回溯自己的生活，他只需要在这三者中检索一番，便能还原个八九不离十。</p><hr><p>到此为止，这篇文章的使命似乎已经完成了。</p><p>但是，关于「如何写日记」或者说「如何成为更好的自己」，我还有想要分享的经验。记录是用图文音视频的方式，将我们的生活固定下来的过程。</p><p>我现在大概会有如下三种日记。每一种都允许碎片化的记录，当你想写的时候就可以动动手指，不用等到深夜身心俱疲只想睡觉的时候才动笔。而且我相信这三种日记形式会对你很有帮助。</p><h3 id="情绪日记：观察自己"><a href="#情绪日记：观察自己" class="headerlink" title="情绪日记：观察自己"></a>情绪日记：观察自己</h3><p>生而为人，「情绪」是我们的重要组成部分。对于积极情绪，我们总是趋之若鹜。但对于消极情绪，我们似乎总试图压制和否定它们。</p><p>如果对心理学有一些了解，我们便会知道，无论是正面还是负面情绪，我们都应该直面它、顺其流动，不应该压制在心底。否则久而久之，情绪的积压便会以更强的合力引爆出更大的问题。</p><p>面对情绪，将自己视为「一个忠实的观察者」或许是很好的选择。像旁观者一样客观、冷静地观察自己的情绪起伏，并记住一定不要对自己做出评价，诸如「我情绪这么糟糕，真的好差劲」这样的想法只会对自己百害而无一利。在<a href="https://deskside.github.io/post/fogg-behavioural-models">成长的关键不是自我鞭策，而是正确的方法</a>中，我分享了《福格行为模型》中一句「反常识」的话，却让我感到醍醐灌顶：</p><blockquote><p>不要自我批评，因为人们在感觉良好的状态下改变，效果最佳。</p></blockquote><p>如果你对这样做的效果表示质疑，我想说「记录本身即是抵抗」，对情绪的记录本身就是舒缓情绪的过程。</p><p>如果你有更深层次的质疑，比如「我为什么要花时间关注自己的情绪」。我想，无论你如何否定，情绪都是对人的行为影响很大的因素，对情绪的控制能力影响着一个人处事的水平，而对情绪的感知能力决定着我们能在多大程度上控制好情绪。</p><p>实话说，我自己就不是一个能够很好地控制情绪的人。这并不是说我常常会在别人面前失控（如暴怒、大哭等），而是说，我很容易让情绪影响到自己行为和心态。一旦情绪走低，我的所有行动都会陷入瘫痪，但又不是一种休息或放松，这种心理瘫痪的状态反而比正常的学习工作还要疲累。</p><p>值得一提的是，控制情绪不等于压制情绪。正如控制体重不等于疯狂减重一样，我们的目标是在控制自己的情绪在合理范围内波动。</p><p>那么，既然要做一个忠实的观察者，最好的方式或许就是记录情绪日记了：把一天内的情绪的起起落落都如实记录下来。</p><p>现在有很多 App 也会关注情绪问题，但大多都只以天为单位关注。例如，这类 App 往往通过一个月历图，展示一个月每一天的单个情绪。这便带来了一个问题：到了晚上，我不知道应该为今天选择哪一种情绪。</p><p>因为，随着遇到的事情不同，我一天内可能会经历「平静、焦虑、喜悦、悲伤、愤怒」等情绪中的不止一个情绪，像是波浪起伏、有高有低。如果要我选择唯一的情绪作为今天的象征，那我应该选波峰还是波谷呢？因此，我会觉得这种记录方式违背了「忠实记录情绪」的原则。<img src="https://s2.loli.net/2022/07/02/ItB6oPS1RV8vjel.jpg"></p><p>事实上，你根本不需要 App。仅仅一个方格本或横线本就足够了。</p><p>我目前暂时将自己的情绪分为平静、焦虑、喜悦、悲伤、愤怒，你可以用英文首字母 P、J、H、S、A 来代表各个情绪。你也可以根据自己的实际情况，思考自己容易出现什么样的情绪。</p><p>在本子每一页的每一根横栏上，先写下日期，再用 5 个格子区分上午、中午、下午、傍晚、深夜，每天根据情绪填入对应时间段就好啦。</p><p>你还可以做出更多 DIY 或更有创意的设计。比如，我拿了 5 根彩色铅笔，用颜色涂满对应格子，这样既直观美观，又简洁简单。</p><p><img src="https://s2.loli.net/2022/07/02/XhYFftGqDNsecal.jpg" alt="https://s2.loli.net/2022/07/02/XhYFftGqDNsecal.jpg"></p><h3 id="积极日记"><a href="#积极日记" class="headerlink" title="积极日记"></a>积极日记</h3><p>在治愈系美剧<a href="https://deskside.github.io/post/this-is-us">《我们这一天》</a>中，有一次，爸爸 Jack 独自带着三个熊孩子出门逛街。但是，中午看电影的时候，老大趁爸爸睡着，偷偷溜出去闲逛、走丢了。爸爸带着剩下的两个孩子慌慌张张找了好久。所幸，妈妈 Rebecca 提前在孩子鞋舌处留了电话号码，很快就在警察局将老大带回了家。</p><p>Jack 和 Rebecca 带着孩子们回到了家。虽然到家了，但三个孩子都因为走丢事件，感到慌张和不安。Jack 自责不已，深感自己毁了孩子的一天。Rebecca 不仅没有责怪他，反而告诉他「只要孩子们还没上床睡觉，今天就没有结束，你依然可以改变孩子们对今天的看法」。</p><p>于是，晚上的时候，Jack 发明了新的家庭游戏，成功逗孩子们开心，最后孩子们上床时脸上挂着温暖的笑容，白天的恐慌已被夜晚的美好所稀释。</p><p>孩子们如此，作为成年人的我们亦然。</p><p>我在上一期<a href="https://deskside.github.io/post/talk-with-bf-about-family">我和好朋友的聊天：童年的伤痛像一根掰不断的倒刺</a>中，讨论到我在某些事情上偏悲观态度，这会大幅影响「专注当下」的能力，进而让我难以「享受当下」。</p><p>比如，如果我和朋友出门游玩一天，我早上出发时的热情与喜悦，到了下午往往就会变成对「快乐的时光总是这么短暂」的忧伤。随后的时间里，我很有可能沉浸在类似的想法里，始终像是「身处众人间，心游离在外」。</p><p>我希望自己能以更积极的态度专注每一天的生活，不要总是试图分析意义。因此，我开始写一种新的日记「积极日记」。</p><p>每天晚上，洗澡前或临睡前，我要写下至少三件今天发生的让我感到愉悦、感恩或开心的事情，无论多么微不足道都可以。哪怕只是朋友陪我一起聊天，哪怕只是今天的天空很湛蓝，只要能让自己感到积极情绪，就值得记录。</p><p>在形式上，这或许最接近传统日记。但区别在于：我只允许自己关注遇到的让自己感觉不错的事件，将注意力放到事物的积极一面。而且形式更轻量，不用繁琐重述，只需要简单列明就好了。</p><p>积极日记虽然不是什么灵丹妙药，但如果能长期坚持下来，应该会引导我以更积极的视角迎接生活中的挑战，并且享受生活中哪怕最微小的乐趣。</p><h3 id="碎片记录：聊天记录、照片、动态"><a href="#碎片记录：聊天记录、照片、动态" class="headerlink" title="碎片记录：聊天记录、照片、动态"></a>碎片记录：聊天记录、照片、动态</h3><p>如前所述，既然「日记」的定义被打破了，那我们也不必拘泥于「日记必须成文」的想法了。</p><p>互联网的发展让沟通变得简便，因此也更频繁。以我和我的对象为例，我们一天中绝大多数行程和动态，都会通过微信告知对方。因此，如果我们俩想不起来某一天做了什么，往往翻一翻聊天记录就能得到答案。</p><p>因此，聊天记录本质上就是一种日记。虽然相比起以前的流水账日记而言，查找起来没那么方便，但这也免去了我们写日记的功夫，不是吗？</p><hr><p>同理，技术发展让照片也变得更加好用。</p><p>我很喜欢 iPhone 相簿的桌面小组件，系统每天都会为我选择一些照片陈列上来，每每看到都会有小惊喜的感觉。</p><p>在 iPhone 相簿里，「回忆」和「精选照片」也很棒，会按照地点、时间或人物来为我整理照片，还会直接生成带有配乐的小视频，让分享变得很简单。</p><p>最重要的是，照片所承载的不仅仅是一幅画面。在照片详情页，你可以一目了然地看到照片拍摄的精确时间和地点，而这一切都是在按下快门的一瞬间发生的。如此种种，不都是日记吗？</p><hr><p>当然，即使有了如上种种，我的倾诉欲（分享欲、表达欲）依然还有一部分：零零碎碎的小思绪。这些可能是吐槽别人，可能是暗恋猜想，还可能是一些不容易被接受的想法……</p><p>「社死现场：被熟人发现了我的微博」是一个之前热度很高的话题，正是因为很多人会把自己不愿告诉别人但又需要有宣泄口的小心思记录在微博。一旦被熟人发现，必然像是被「扒了内裤」一样羞耻和尴尬。在少数派，甚至有极客会自建一个微博，专门用来记录自己的碎碎念。</p><p>我自己使用 flomo 来承载这部分作用。一方面，flomo 的设计十分接近微博或朋友圈，无论是界面还是云同步，用起来都很有感觉；另一方面，flomo 免费用户的纯文字存储无限量，让人不必担心资费的问题。</p><p>你不一定要选择 flomo。我曾经跟我的朋友推荐过，但是她依然选择微博，因为她仍然希望自己发的内容能被陌生人看到或有一定的公开曝光。如果你也如此，那任何你喜爱的社交平台都可以成为你的「日记本」。</p><h2 id="让自己重新爱上日记"><a href="#让自己重新爱上日记" class="headerlink" title="让自己重新爱上日记"></a>让自己重新爱上日记</h2><p>将传统的流水账日记打破，分成多种不同的日记形式。不再一昧追求统一，而是根据自己的需求选择不同的日记，让记录发挥出更多元、更深入、更长久的效果。</p><p>我想，这样子的话，或许能让我自己、也能让你重新爱上记录生活吧！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;你还记得初高中那段时间的小心思吗？&lt;/p&gt;
+&lt;p&gt;那些对喜欢的人小心翼翼的关注，害怕被同学孤立或讨厌的忧心，害怕自己进步得太慢的焦虑……所有的小心思都在身体里翻涌，在夜色下辗转，在阳光下焦灼。作为学生，我们大多会选择一种成本最低的方式，将这些心绪排解——写日记。&lt;/p&gt;
+&lt;</summary>
+      
+    
+    
+    
+    <category term="与自己和解" scheme="http://example.com/categories/%E4%B8%8E%E8%87%AA%E5%B7%B1%E5%92%8C%E8%A7%A3/"/>
+    
+    
+    <category term="人生" scheme="http://example.com/tags/%E4%BA%BA%E7%94%9F/"/>
+    
+    <category term="焦虑" scheme="http://example.com/tags/%E7%84%A6%E8%99%91/"/>
+    
+    <category term="写作" scheme="http://example.com/tags/%E5%86%99%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>桌沿是谁？</title>
+    <link href="http://example.com/2022/06/28/about-me/"/>
+    <id>http://example.com/2022/06/28/about-me/</id>
+    <published>2022-06-28T04:42:06.000Z</published>
+    <updated>2022-11-01T08:38:23.947Z</updated>
+    
+    <content type="html"><![CDATA[<p>亲爱的朋友：</p><p><strong>你好，我是桌沿！</strong></p><p>每周五早上，我都会通过邮件向订阅了我 Newsletter 的朋友们推送一篇我的作品，分享本周我的思考、阅读或遇见的优秀作品（书籍、影视、文章等）。</p><p>在信息过剩的年代，订阅新的信息源可能意味着新的垃圾，但我还是请你放心，我会尽全力为你提供价值。</p><p>如果你也对我的 Newsletter 感兴趣， <a href="https://deskside.zhubai.love/">请戳此处</a>哦！</p><hr><p>如果你是新朋友，这些小标签能帮你了解我：</p><p>🌸 毕业于武汉大学，时常怀念樱花树下的人和事。</p><p>🏋️‍♂️ 健身入门级玩家，腹肌真的很难练哇！我的健身环都100级了，我还没有6块腹肌……</p><p>🦄 喜欢设计，以及有设计感的玩意儿。努力做一个有品位的人。</p><p>🧑‍💻 Swift 语言小学生。</p><p>🌶 一个很能吃辣的广州人嘿嘿，不信咱约个饭？</p><p>🛣️ 热爱压马路这种不花钱的消遣方式，只要善于观察，城市和自然中处处是惊喜。</p><p>🔃 异步沟通推崇者，别让电子设备过度侵占自己的现实生活啦。</p><p>👕 白色衣服荣誉批发商，99.99%的概率能在街上见到穿白T的我。</p><p>💭 最喜欢和好朋友们聊天了！</p><p>✏️ <a href="https://sspai.com/u/379wzx2e/posts">少数派签约作者</a>，同时也是认真的 <a href="https://deskside.zhubai.love/">Newsletter 创作者</a>。</p><hr><p>如果你对我感兴趣，那以下几篇文章或许是咱们交情的开始：</p><ul><li><a href="https://sspai.com/post/66423">信息与想法的川流，如何收纳与整理？</a></li><li><a href="https://sspai.com/post/65155">写给所有需要做笔记的你：为什么我推荐你一定试试 Notion ？</a></li></ul><hr><p>最重要的是，感谢你浏览我的网站，请随意逛逛！</p><p>祝你你永葆创造力！<br>桌沿</p><p>Copyright © 2022 deskside zhuoyan, All rights reserved.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;亲爱的朋友：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;你好，我是桌沿！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;每周五早上，我都会通过邮件向订阅了我 Newsletter 的朋友们推送一篇我的作品，分享本周我的思考、阅读或遇见的优秀作品（书籍、影视、文章等）。&lt;/p&gt;
+&lt;p&gt;在信息过剩的年代</summary>
+      
+    
+    
+    
+    
+    <category term="自己" scheme="http://example.com/tags/%E8%87%AA%E5%B7%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我和好朋友的聊天：童年的伤痛像一根掰不断的倒刺</title>
+    <link href="http://example.com/2022/06/25/talk-with-bf-about-family/"/>
+    <id>http://example.com/2022/06/25/talk-with-bf-about-family/</id>
+    <published>2022-06-24T16:00:00.000Z</published>
+    <updated>2022-07-13T02:33:16.190Z</updated>
+    
+    <content type="html"><![CDATA[<p>我总是自称「一个运气不怎么样的人」，每次抽奖基本都与奖品无缘，从小到大也没觉得经历过什么特别的好运爆棚的时刻，甚至玩游戏抽卡也平平无奇。</p><p>但只有一个方面，让我怀疑我是不是将运气都保留到这个地方了，那就是「结交好友」。</p><p>社会鱼龙混杂，谁都有遇人不淑的时候，因此我在此特指「好朋友」。我在人生的每个大阶段，似乎都会遇上一两个让我觉得很棒的好朋友。</p><p>我在大学最要好的朋友，因主持晚会而相识，因经常寻觅好吃餐厅而相知，因经历和三观极其相近而相熟。这几天我回武汉，也被她拽着吃了好几顿大餐。</p><p>前几天和她吃的一顿饭上，我们触及了几个非常核心的话题，我想与大家分享。</p><h3 id="被妈妈刺痛的一句话"><a href="#被妈妈刺痛的一句话" class="headerlink" title="被妈妈刺痛的一句话"></a>被妈妈刺痛的一句话</h3><p>我和她都是离异家庭的孩子，但我们的所经历的境况不同。我相信，家家都有难念的经。但是，相比父母同心、但偶有争吵的、较为和谐的家庭，父母不同心、不和谐或父母（某一方）存在巨大问题的家庭，孩子会受到极大的创伤。</p><p>我和好朋友都一致同意，如果简单粗暴地将人分为「来自较和谐的家庭」和「来自较不和谐的家庭」两种，两者将有明显的差别。前者总体上会呈现更乐观、积极、自信和钝感的状态，后者则恰恰相反，总体上呈现更悲观、消极、不自信和敏感的状态。</p><p>我和好朋友聊到了一件事，产生了极大的共鸣——</p><p><strong>如何看待「孩子在原生家庭中所遭遇的事情，对现在的影响」？</strong></p><p>作为童年经历过极大家庭不和谐的孩子，无论我们长大后过得如何，我们都不认为我们的童年家庭经历是件好事（毕竟成长过程中，真的很多痛苦和困惑），或是一件纯粹的坏事（从结果而言，我们会比同龄人更成熟）。那么，我们如何理解和评价这件事？</p><p>我只能说：这一切都是客观发生了的，既然发生了，那就不再去评价了。但是，我们的妈妈都在某次聊天触及相关话题的时候，说过一句话——</p><p>「你难道不觉得这是一件好事吗？」</p><p>这句话无论从理性还是感性都刺痛了我们。理性上，这显然是因果倒置，以果判因。最终结果确实是我们被逼着长大和成熟，但这是结果，不是最初让我们遭遇这一切的原因。</p><p>感性上，这句话抹杀了我们成长过程中所有的痛苦感受和负面情绪。退一万步说，如果这是好事，那我们经历的痛苦和烦恼是不是就被一笔勾销了呢？</p><p>B 站 up 主 vivi 可爱多的新视频《<a href="https://www.bilibili.com/video/BV1hN4y137pK">毕业13年后，当年的问题还是问题吗</a>》中，她和朋友都一致认为，当年的磨难不值得感谢，她们更愿意用「既然我都经历了磨难，那我一定也要从你这里抢回一些东西，比如勇气、自信、成熟」来思考当年事情的影响。我也同样认可。</p><p>我的好朋友对此现象提出了一个有信服力的解释。我们的母亲们对于这件事是有愧疚或感到不安的，她们希望在成年的我们身上找到一些慰藉或安慰，这无可厚非，我们也常常告诉母亲们小时候的事已经过去了。但却选择了一个错误的方式，反而继续让我们受到了伤害。</p><h3 id="理解，甚至只需一句话"><a href="#理解，甚至只需一句话" class="headerlink" title="理解，甚至只需一句话"></a>理解，甚至只需一句话</h3><p>人其实是一种强烈的渴望「被理解」的生物，但是人的大脑结构和语言能力似乎已经决定了人是多疑的、费解的、反复无常的。</p><p>大部分人都有很强烈的倾诉欲，只不过表现形式不尽相同。有些人选择与朋友聊天，有有些人选择写作，有些人选择唱歌、拍摄等创作活动……每一种倾诉都暗含着渴望被理解的冲动。</p><p>英国玄学派诗人约翰·多恩写下了《没有人是一座孤岛》，诗里暗含的是全人类命运与共的真知灼见。但我认为这依然不妨碍每一个人类个体的高度孤独性，换言之，如果继续拿孤岛做例子，那么或许「所有人都各是一座孤岛，只不过岛上装了扩音器，还有WiFi」。</p><p>一部分因为天生性格，一部分因为原生家庭等因素，我虽然总体是一个比较外向的人，但很多我认为重要的事情依然会埋藏在心底里自己消化，无论是对象、挚友还是亲人都未曾告知。</p><p>因此，如果我想要将某个在自己脑海里萦绕盘桓许久的事情，试着第一次与他人分享，即使那个人是我重要的安全感来源（比如对象、好朋友），我也依然需要做很久的思想工作。</p><p>这也是为什么我的好朋友在听我讲了很多事情之后，第一句话「我想，你要说出这些内容肯定很不容易」的时候，我突然间就感到了释怀。无论对方有没有真正对我表达的话题产生共鸣，对方都已经理解了我掏心言说的艰难。仅此一点，我就已经感到欣喜和感动了。</p><h3 id="怎么安慰别人"><a href="#怎么安慰别人" class="headerlink" title="怎么安慰别人"></a>怎么安慰别人</h3><p>写到这里，让我想起了「怎么安慰别人」这个议题。我不能说是一个很会安慰人的人，但有一些思考可供参考。</p><p>（以下的他均无性别特指，可指代任何性别取向）</p><p>陪伴和倾听。这里是指非常单纯的陪伴和倾听。既不要费尽口舌安慰或试图逗笑他人，也不要对其经历和遭遇的人做出任何评价。最好能够当面坐在一起，让对方知道有人在听他讲话、在陪他就好了。通常而言，这已是莫大的安慰。</p><p>如果对方希望你能发出共鸣，最简单也最不会刺痛对方的方式，其实是复述对方的话。一方面，复述是一种双重确认，你在向对方确认你是否正确理解了发生的事情、他的烦恼和困扰。另一方面，复述本身其实也很有力量，很多时候，光是听别人试着理解自己的烦忧，烦忧便已消散许多。</p><p>如果话题还在深入，你可以试着去思考对方为什么会有这样的反应，为什么会遭遇这样的事情，为什么会在意某人说的话、某人做的事等。这背后往往潜藏了一个人内心深处的恐惧。</p><p>最后，尽量鼓励对方思考以后如何避免类似的事情发生，但尽量不要将你的想法强加给他人。比如，你可以鼓励朋友去心理咨询，但强拉着他去心理咨询并不一定会有好结果。</p><p>虽然我写了四点内容，但按照我的经验，实际上，大部分的安慰对话都会在第一步收尾。</p><h3 id="乐观与悲观的半杯水"><a href="#乐观与悲观的半杯水" class="headerlink" title="乐观与悲观的半杯水"></a>乐观与悲观的半杯水</h3><p>有一个很出名的心理学实验「半杯水」。桌子上摆着半杯水，你是认为「这个杯子一半满」还是「这个杯子一半空」，代表了你是一个乐观还是悲观的人。</p><p>好朋友是区分情况的乐观与悲观，比如，她对于「友情」乐观，对于「爱情」悲观……</p><p>我从此衍生了一个自己的理论「加减分」。我们对于绝大多数新接触的人、事、物都会保有某种期待，但具体是「默认为满分100分，随着深入了解再逐渐减分」还是「默认为0分，随着深入了解再逐渐加分」，代表着我们对其是乐观还是悲观预期。</p><p>我对「人」总是抱有乐观预期，我默认每个人都是好人，因为每个人在我这里一开始都是100分，如果发生了不愉快，我才会逐步扣分。然而，与之相反，我总是对「我的未来境况」抱有悲观预期，我总是默认自己会过得不好，或者不如别人好，或者即使努力了也不会有好结果。</p><p>「事中享受程度」也可以说明一些事情。我属于典型的杞人忧天人格，我常常无法尽情享受当下。基本上，当我感到很开心的时候，几分钟后我就会开始意识到「这并不能长久」。</p><p>比如前两天，我躺在学校操场草坪上，枕着对象的大腿看天空，云朵随着夜空中的风跑得飞快，一切都很浪漫和美好。但不消一会儿，我大脑里思考的事情就从「这样真好」变成了「等异地恋了就不能这样了」「过几天我就要走了」等，我的心也随着思考沉下去了，悲伤等消极情绪也开始翻涌。</p><p>如果你也是类似的性格，或许一个小方法是开始识别和观察情绪。只有当我们意识到自己所感受的情绪时，我们才有可能慢慢改变它们。</p><p>相对应的，另一个能反映性格的行为是「事后记忆的留存」。我新认识的朋友妄为是典型的乐天派，他说他对恋爱中发生过的事情，大都只记住了快乐的部分，争吵、不愉快基本上都淡化了。实话实说，我十分羡慕。</p><p>值得警惕的是，如果自己是偏悲观的性格，就更不要用「悲观性格的人真的好差劲」这样的想法来继续伤害自己、陷入循环论证。偏悲观的性格也有其好处，其更能未雨绸缪。</p><p>因此，很难说乐观一定优于悲观性格。但是，能全情投入当下，总是好过时常惶恐不安，不是吗？</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;我总是自称「一个运气不怎么样的人」，每次抽奖基本都与奖品无缘，从小到大也没觉得经历过什么特别的好运爆棚的时刻，甚至玩游戏抽卡也平平无奇。&lt;/p&gt;
+&lt;p&gt;但只有一个方面，让我怀疑我是不是将运气都保留到这个地方了，那就是「结交好友」。&lt;/p&gt;
+&lt;p&gt;社会鱼龙混杂，谁都有遇人不淑</summary>
+      
+    
+    
+    
+    <category term="与自己和解" scheme="http://example.com/categories/%E4%B8%8E%E8%87%AA%E5%B7%B1%E5%92%8C%E8%A7%A3/"/>
+    
+    
+    <category term="人生" scheme="http://example.com/tags/%E4%BA%BA%E7%94%9F/"/>
+    
+    <category term="心理学" scheme="http://example.com/tags/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
+    
+    <category term="父母" scheme="http://example.com/tags/%E7%88%B6%E6%AF%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一起来东湖边看日出</title>
+    <link href="http://example.com/2022/06/21/go-and-see-the-dawn/"/>
+    <id>http://example.com/2022/06/21/go-and-see-the-dawn/</id>
+    <published>2022-06-20T16:00:00.000Z</published>
+    <updated>2022-07-13T02:36:58.554Z</updated>
+    
+    <content type="html"><![CDATA[<p>武汉大学北边的东湖浩浩汤汤，作为广州人的我第一次来到这里的时候，有被震撼到。</p><p>前几天，我被新认识的朋友妄为凌晨五点拉着来东湖边看日出，还是非常快乐的。我还在朋友圈写了一首小诗：</p><p>地平线的乌云高如城墙期待消沉了下去<br>结果人山人海被一场小小雨冲走了大半<br>接下来的栈桥就归愿意等待的人拥有了<br>太阳冲过乌云城墙的最高处变成鹅蛋黄</p><p>妄为说的一句话，也被我记住了——「来都来了，日出已经不重要了」。这句话似乎还隐藏着人生哲学的意味。</p><p>（以下图片均来自妄为之手，不得不夸！）</p><p><img src="https://s2.loli.net/2022/06/29/XKMC5LQsznNdTlp.png"></p><p><img src="https://s2.loli.net/2022/06/29/pGdiMDZqEUu8olK.png"></p><p><img src="https://s2.loli.net/2022/06/29/zCeRc3thoMLQw1a.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;武汉大学北边的东湖浩浩汤汤，作为广州人的我第一次来到这里的时候，有被震撼到。&lt;/p&gt;
+&lt;p&gt;前几天，我被新认识的朋友妄为凌晨五点拉着来东湖边看日出，还是非常快乐的。我还在朋友圈写了一首小诗：&lt;/p&gt;
+&lt;p&gt;地平线的乌云高如城墙期待消沉了下去&lt;br&gt;结果人山人海被一场小小雨冲</summary>
+      
+    
+    
+    
+    <category term="生活录" scheme="http://example.com/categories/%E7%94%9F%E6%B4%BB%E5%BD%95/"/>
+    
+    
+    <category term="自然" scheme="http://example.com/tags/%E8%87%AA%E7%84%B6/"/>
+    
+    <category term="小确幸" scheme="http://example.com/tags/%E5%B0%8F%E7%A1%AE%E5%B9%B8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我们总爱追问意义</title>
+    <link href="http://example.com/2022/06/18/we-like-asking-about-meaning-of-life/"/>
+    <id>http://example.com/2022/06/18/we-like-asking-about-meaning-of-life/</id>
+    <published>2022-06-17T16:00:00.000Z</published>
+    <updated>2022-07-13T02:36:57.230Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="我们总爱追问意义"><a href="#我们总爱追问意义" class="headerlink" title="我们总爱追问意义"></a>我们总爱追问意义</h2><p>我们总是喜欢追问，XXX的意义是什么？</p><p>学这个的意义是什么？活着的意义是什么？做这件事的意义是什么？过上更好的生活的意义是什么？……</p><p>如果刨根问底，我们似乎总是会得到两个不同的结论，要么一切皆无意义，要么过程就是意义。</p><h3 id="一切皆无意义"><a href="#一切皆无意义" class="headerlink" title="一切皆无意义"></a>一切皆无意义</h3><p>不知道有多少读者朋友喜欢阅读科幻作品，科幻作品常用的「杠杆」之一是时间，将任何事物放到亿万年的时间维度之下，都会显得意义寡淡。</p><p>《三体》的结局里，主角终于坐上了能时空跳跃的飞船，等到数小时不到的航程结束，她却发现实际的地球时间已经过了百万年，地球早已灰飞烟灭。</p><p>《爱，死亡，机器人》里非常出色的几个故事也讨论了相关问题。</p><p>《Swarm》提出了全新的关于宇宙文明生存的理念，即「智慧并不是文明生存的关键」。智慧超出一定的限度，一个文明更容易倾覆而非扩张。现阶段人类所追求的各种技术，究竟是会造福人类还是会让人类拥有更快毁灭自己的手段，没有人能看清。</p><p>《Pop Squad》里，人类虽然在科技上掌握了永生的技术，却似乎未在心灵上掌握永生的能力。豆瓣网友评价，永生更像是一种诅咒，而不是祝福。因为永生让一切事物都可等待、都无意义，正是时间的短缺赋予了事物以意义。</p><p>《Night Of The Mini Dead》，地球的灭亡不过是宇宙放的一个屁，极具讽刺意味。</p><p>除此之外，还有很多作品都在穷尽人类的想象力，提出了有关世界和人类的不同思考。</p><h3 id="过程就是意义"><a href="#过程就是意义" class="headerlink" title="过程就是意义"></a>过程就是意义</h3><p>我们总会期待一个「美好的结局」、害怕一个「糟糕的结局」。可事实上，除了死亡会敲定真正的结局之外，没有任何其他事情有一个确定的结局。</p><ul><li>甜蜜的恋爱可能会分手，但也可能在未来再续前缘。</li><li>再好的朋友可能会因毕业而联系减少，但未来仍有契机再见面。</li><li>青春校园生活确实会结束，但重新进入校园并非不可能之事，毕竟现在可是连老年大学都有的社会。</li><li>我们担心和恐惧的事情总会结束，不过很快我们就会继续为其他事情烦恼。</li><li>……</li></ul><p>当我们运气不佳或实力不济的时候，我们可能会认为自己遇到了糟糕的结局。可如果让钟表流转，多年后的我们说不定会笑一笑，感谢当初自己的境遇。</p><p>换言之，好结局和坏结局，似乎泾渭分明，实则交错盘桓。正如美剧《This is us》里所说：</p><blockquote><p>“There’s no lemon so sour that you can’t make something resembling lemonade.”<br>没有一种柠檬酸到让你无法做出像柠檬汁一般的饮品。</p></blockquote><p>很多时候，「期待一个美好结局」让我们有动力和毅力能够忍耐住糟糕的当下。</p><p>从好的方面思考，这种想法确实让我们能够坚持下去。但从坏的方面思考，却让我们厌恶每一天的生活，或者让自己的情绪长期处于低谷之中。</p><p>如果好坏结局不是黑白分明的，那我们判断意义的工具便只能看向过程了。过程是喜是悲，更多取决于自己而非外界。如果我们不能享受过程，那我们就无法收获幸福。如此看来，幸福不是一种结果，更像是一种能力或方法。</p><p>可是，得出「过程就是意义」这个答案并不困难，难的是如何将这种思想实践。当我们面对他人刁难、酷热严寒、权利侵犯、生活不顺等种种困境的时候，我们究竟如何面对和自处，需要更多方法论的支撑。</p><p>显然，我也没有终极答案。在这里，推荐大家读几本书《<a href="https://book.douban.com/subject/27167270/">像哲学家一样生活</a>》，书中总结和提炼了从古希罗马时代就已经开始流传的「建立人生哲学」的智慧结晶，其中就谈到了很多有关如何面对侮辱、悲伤、财富等问题的思考和方法论。这或许会是让我们过上更良好的生活的一扇门。</p><p>我相信，相比于古今中外各大家对「人生」「意义」等终极话题的探讨，我今天的思考相比之下想必只能激起水花一小朵。但生而为人，我们似乎总是会为这类话题着迷，在之后的 Newsletter 中，我也依然可能继续探讨。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;我们总爱追问意义&quot;&gt;&lt;a href=&quot;#我们总爱追问意义&quot; class=&quot;headerlink&quot; title=&quot;我们总爱追问意义&quot;&gt;&lt;/a&gt;我们总爱追问意义&lt;/h2&gt;&lt;p&gt;我们总是喜欢追问，XXX的意义是什么？&lt;/p&gt;
+&lt;p&gt;学这个的意义是什么？活着的意义是什么？</summary>
+      
+    
+    
+    
+    <category term="我的人生哲学" scheme="http://example.com/categories/%E6%88%91%E7%9A%84%E4%BA%BA%E7%94%9F%E5%93%B2%E5%AD%A6/"/>
+    
+    
+    <category term="意义" scheme="http://example.com/tags/%E6%84%8F%E4%B9%89/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>上帝的随手画</title>
+    <link href="http://example.com/2022/06/16/graffiti-of-god/"/>
+    <id>http://example.com/2022/06/16/graffiti-of-god/</id>
+    <published>2022-06-15T16:00:00.000Z</published>
+    <updated>2022-07-13T02:36:56.050Z</updated>
+    
+    <content type="html"><![CDATA[<p>这段时间我回到了武汉和同学与对象游玩。广州正值雨季，终日天色昏昏、雨水淅沥，而武汉却阳光正盛、热气灼灼。</p><p>我拍了武汉18点多的天空全景图，云朵就像是上帝（或上帝的孩子）的随手画，缭乱无章，却又十分漂亮。在这里与大家分享。虽然武汉的年均雾霾和空气质量似乎比广州差，但是六月份的武汉天空确实比广州要湛蓝得多，云彩也懒洋洋地徜徉在天空。</p><p>有一本书叫《<a href="https://book.douban.com/subject/27624390/">云彩收集者手册</a>》，由英国赏云协会编制，如果你也喜欢或希望常常抬头仰望遮蔽人类的蓝色天空，不如翻翻这本书吧。</p><p><img src="https://s2.loli.net/2022/06/29/r4j9FThMy8RJEZt.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;这段时间我回到了武汉和同学与对象游玩。广州正值雨季，终日天色昏昏、雨水淅沥，而武汉却阳光正盛、热气灼灼。&lt;/p&gt;
+&lt;p&gt;我拍了武汉18点多的天空全景图，云朵就像是上帝（或上帝的孩子）的随手画，缭乱无章，却又十分漂亮。在这里与大家分享。虽然武汉的年均雾霾和空气质量似乎比广州差</summary>
+      
+    
+    
+    
+    <category term="生活录" scheme="http://example.com/categories/%E7%94%9F%E6%B4%BB%E5%BD%95/"/>
+    
+    
+    <category term="自然" scheme="http://example.com/tags/%E8%87%AA%E7%84%B6/"/>
+    
+    <category term="小确幸" scheme="http://example.com/tags/%E5%B0%8F%E7%A1%AE%E5%B9%B8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>心静自然凉的时刻</title>
+    <link href="http://example.com/2022/06/13/calm-down-and-cool-down/"/>
+    <id>http://example.com/2022/06/13/calm-down-and-cool-down/</id>
+    <published>2022-06-12T16:00:00.000Z</published>
+    <updated>2022-07-13T02:33:20.970Z</updated>
+    
+    <content type="html"><![CDATA[<p>我是一个很怕热的人，一旦我感到燥热和汗湿，我的身体就会很难受、精神状态也会变差。</p><p>前几天刚到武汉的时候，天气很闷热。因为武汉多湖，水汽足，武汉白天的热总给人一种焖蒸的感觉。恰逢正午太阳凌空，我刚刚在外面走了一圈，身上已经有一层黏糊糊的汗，脑袋困乏，整个人燥热不安。</p><p>因为朋友在忙，我一个人（被迫）坐在没有空调没有风扇的客厅里。我又出去走了走，想找个咖啡厅坐一坐，却觉得咖啡厅的冷气很弱，不想坐下来。最后兜兜转转，又走回了朋友家的客厅，我坐在那里，打开电脑，开始做一些不会让自己心烦意乱的事情。</p><p>慢慢地，我似乎就感觉不那么热了，一切似乎在心平气和中都变得和缓了下来。虽然依旧闷热，但是似乎不怎么出汗了，心态也不那么燥热不安了。这或许就是所谓的心静自然凉吧，一种由心态引发的身体上的变化。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;我是一个很怕热的人，一旦我感到燥热和汗湿，我的身体就会很难受、精神状态也会变差。&lt;/p&gt;
+&lt;p&gt;前几天刚到武汉的时候，天气很闷热。因为武汉多湖，水汽足，武汉白天的热总给人一种焖蒸的感觉。恰逢正午太阳凌空，我刚刚在外面走了一圈，身上已经有一层黏糊糊的汗，脑袋困乏，整个人燥热不</summary>
+      
+    
+    
+    
+    <category term="我的人生哲学" scheme="http://example.com/categories/%E6%88%91%E7%9A%84%E4%BA%BA%E7%94%9F%E5%93%B2%E5%AD%A6/"/>
+    
+    
+    <category term="健康" scheme="http://example.com/tags/%E5%81%A5%E5%BA%B7/"/>
+    
+    <category term="自然" scheme="http://example.com/tags/%E8%87%AA%E7%84%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>分享我的故事：孤独感</title>
+    <link href="http://example.com/2022/06/11/my-story-about-loneliness/"/>
+    <id>http://example.com/2022/06/11/my-story-about-loneliness/</id>
+    <published>2022-06-10T16:00:00.000Z</published>
+    <updated>2022-11-05T03:07:09.113Z</updated>
+    
+    <content type="html"><![CDATA[<p>《也许你该找个人聊聊》里面的一段话让我触动很大：</p><blockquote><p>如果你问我，在我一开始行医（心理医生）的时候，来我这儿看病的人都是为了什么而来，我会说他们来是希望减轻焦虑或抑郁，或是解决感情问题。但无论各人的情况有何不同，孤独这个元素似乎是共通的，每个人都渴望人与人之间强有力的情感交流，却又缺少这种交流。这就是一种渴求。虽然人们不会这样表达，但我越深入了解他们的生活，就越能感受到这种渴求，而且我也能在自身的方方面面感受到这种渴求。</p></blockquote><p>现在的我对「孤独感」的感受不能说没有，但确实处于一个比较低的水平。</p><p>我想其中一个很重要的原因是我当年刚上初中的时候，翻天覆地的孤独感淹没了当时的我，而我最终也找到办法撑过来了。</p><p>因此，我现在对于孤独感的感受，就像曾经见过大海的人，虽然生来怕水，但是不会在面对小池塘时仍惊慌失措。</p><p>这是我有关「孤独感」的故事：</p><hr><p>一方面，我上的是寄宿制初中，也是我生平第一次离家在一个完全陌生的地方居住，而且初中离家并非一般的远，和我家几乎在广州的两端，开车需要60多公里。无论是风景、事物还是人，都是全新、陌生、令人恐惧的。</p><p>我第一个寄宿夜，根本没睡着。躺在床上辗转反侧，起来在被路灯和月光照亮的宿舍里踱步，到宿舍楼间的花园发呆。最后竟然一宿到了天明。当然，这是有后果的，我在第二天的军训动员班会上当着教官的面睡着了——而且我坐第一排。</p><p>可能是军训太晒了，也可能是变化太大，小学一顿能吃大半只白切鸡的我，在整个军训期间都胃口寡淡，零食几乎一口未动，正餐也兴致乏乏。我每天唯一期待的就是中午和下午的休息时间，因为这意味着我能去宿舍楼底下那排红色的电话机，插入200电话卡，拨号——和我妈打电话。</p><p>我几乎和我妈打了接近一个月的电话，在校的每天都会打，每次都要打很久。聊了什么早已记不清，但能和我妈通话是我当时唯一的慰藉。现在想来，我妈也是辛苦，每天都得花上大段时间来安慰我。</p><p>另一方面，我的初中主打外国语为特色，而小学的我英语并不算优秀，刚进去之后发现身边同学们的英语都比我好，我深受打击。我记得一开始单词听写的时候，我很多都不会，总是紧张兮兮地想要抄同桌的答案，而同桌直接无视了我，把卷子掩得严严实实。那个动作令我的自尊备受打击。</p><hr><p>不仅如此，当时我们初中的英语教学区分A、B班，英语成绩前60%的学生在A班，后40%的学生在B班。虽然这在当时是很有特色的差异化教学策略，但我一直都不太认可其教学成果和对学生的心理影响。A班的授课地点在本班级，B班的授课地点在隔壁的小教室，这意味着每次上英语课的时候，抱着课本文具离开班级到隔壁上课的学生，都是英语比较差的学生。</p><p>后来，我做了一件自己至今都感到神奇和感激的事情，我在大半个学期的几乎每个早上，提前半小时起床到校园的静僻角落，拿着我的一个巴掌大的塑封红笔记本，上面手抄了英语课本上的文章。直到第一节课前，我都会在那里努力把课文一字不拉地背下来。</p><p>毫不夸张地说，这奠定了我的英语基础。从下个学期的分班考试开始，我的成绩再也没有离开过A班水平，甚至名列前茅。高中、大学、至今的英语水平都比大部分同学高很多。</p><p>虽然此文的重点并非英语学习教学，但我从此学习到的语言学习方法是，不要背单词，要背也要背文章，文章不仅包含了单词的词义，还包含了用法、时态等语境，对于培养语感有远超单词的效果。</p><p>也是从英语成绩的提升开始，我逐渐找到了自信。</p><hr><p>另一方面，我的舍友们一开始令我非常不爽，我妈在入住日的时候帮我洗了一双袜子，因为没有袜子架，就直接用衣架晾晒在了阳台很显眼的地方。我不记得是哪个舍友了，见到之后叫我「袜子男」。</p><p>我非常不喜欢这个外号，但却缺乏勇气去抗议。我不是一个很有自信的男生，当时胖胖的身材里装着一颗不安的心。</p><p>我极度不开心，却只能自己消化情绪。为了能避免和同学一起吃饭，中午放学后大家都冲去饭堂，我一个人坐在教室里过了20分钟才去吃饭。晚自习后我也不愿意太早回宿舍，袜子男的称号一直被我的舍友挂在嘴边，每次听到我的心都会刺痛一下。</p><p>大概过了几周，我才寻求班主任的帮助。班主任严厉批评了他们，后来他们就不再说了。</p><p>虽然这算不上身体上的校园霸凌，但「乱起侮辱性外号」同样是摧残孩子精神的霸凌行为。身体上的欺凌是否发生，显而易见。而精神霸凌的重点是，是否构成侮辱，不由说者、老师、父母决定，而由听者即学生决定。每个人的经历和承受能力不同，对于什么词汇刺激自己有「唯一决定权」。在孩子遇到此类事情的时候，不应该否定孩子的感受，而应该先与其共情、了解为什么这些词汇令其不开心，再去解决问题。</p><hr><p>后来，经历了最开始那段灰色的日子，之后的我也一直在成长和改变，初中的大部分时光依然是美好的。那段日子早日成为我与朋友间偶尔的谈资，也成为了这次 Newsletter 的主题。</p><p>写到这里，我开始思考「我写这个故事是为了说明什么道理」。如果我想宣扬「先苦后甜」，稍加改动这便成为一个励志故事。但我无法从自身的经历中看到这一点，更无意强行升华。</p><p>我想分享的是作为人，共有的一种孤独感。无论年龄阅历几何，无论是独自一人还是身处派对之中，我们都时不时会感受到一种强烈的孤独感，那种自己突然之间就从所有人中抽离出来的虚空感，那种似乎没有人能够理解自己的恐惧感。</p><p>显然，除非选择死亡，否则我们没法选择抛弃这种本能。既然无可避免，那么正视我们的孤独感，或许会是更好的策略。</p><p>拿起手机毫无目的地乱刷，是不是为了寻求摆脱一个人的社交快乐，是不是为了寻求那种想要有人理解自己的可能性，是不是为了逃避与自己相处。</p><p>如果我们能在与他人面对面相处时，全情投入，不看手机不分心。那么我们会不会在独处的时候更能接受自己，更能与那始终萦绕着自己的孤独感和睦共处。</p><p>如果你感到孤独，那你并不孤独。这或许是孤独感最大的玩笑和慰藉吧。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;《也许你该找个人聊聊》里面的一段话让我触动很大：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果你问我，在我一开始行医（心理医生）的时候，来我这儿看病的人都是为了什么而来，我会说他们来是希望减轻焦虑或抑郁，或是解决感情问题。但无论各人的情况有何不同，孤独这个元素似乎是共通的，</summary>
+      
+    
+    
+    
+    <category term="与自己和解" scheme="http://example.com/categories/%E4%B8%8E%E8%87%AA%E5%B7%B1%E5%92%8C%E8%A7%A3/"/>
+    
+    
+    <category term="自己" scheme="http://example.com/tags/%E8%87%AA%E5%B7%B1/"/>
+    
+    <category term="孤独" scheme="http://example.com/tags/%E5%AD%A4%E7%8B%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我第一次读完英文原著小说！</title>
+    <link href="http://example.com/2022/06/04/finish-reading-english-novels-for-the-1st-time/"/>
+    <id>http://example.com/2022/06/04/finish-reading-english-novels-for-the-1st-time/</id>
+    <published>2022-06-03T16:00:00.000Z</published>
+    <updated>2022-07-13T02:36:53.545Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://s2.loli.net/2022/06/29/uVwj4cJLX8IFprd.png"></p><p>就在昨晚，我看完了《<a href="https://www.goodreads.com/book/show/2767052-the-hunger-games">Hunger game</a>》三部曲！</p><p>在我初中的时候，《<a href="https://www.douban.com/search?source=suggest&q=%E9%A5%A5%E9%A5%BF%E6%B8%B8%E6%88%8F">饥饿游戏</a>》系列电影在国内上映，同时也带动了原著小说的流行。当时正是因为我们班上有很多同学在看原著小说，因此我才接触到了这部作品。</p><p>国内（豆瓣）和海外（IMDb 和 Goodreads）对饥饿游戏小说和电影的评分出奇的相似（虽然评分算法不尽相同），电影四部曲只有6-7.5分，而小说三部曲都斩获8.5分左右的高分。</p><p>作为小说和原著都看过的人，不得不说，和所有改编自小说的电影一样，受限于成本和篇幅，电影不得不删减海量的小说细节。虽然饥饿游戏电影完成度不错，但是如果没看过小说的人还是会一头雾水，或觉得部分情节莫名其妙。</p><p>我个人非常喜爱饥饿游戏小说三部曲，这是一部有关反抗精神的小说。之所以名为饥饿游戏，是因为故事背景所在的国家每年会组织一场饥饿游戏，在下辖12个地区分别随机抽取1名男童和女童，并将他们投入一个人造竞技场，使其互相杀戮直至最终只有一人生存。具体内容我就不透露了，如果有感兴趣的朋友，我更推荐阅读小说，之后可以再看看电影，看看脑海里想象的画面与电影呈现的画面有多少出入。</p><p>我已经不记得是什么时间，大约是2014年左右，我头脑一热上网买了三本《<a href="https://www.goodreads.com/book/show/2767052-the-hunger-games">Hunger game</a>》英文原著小说。但显然，我当时的英文词汇量还没有达到能够流畅阅读英文小说的程度。</p><p>如下图，左边是我当年阅读的笔记，我需要依靠密密麻麻的翻译才能读懂。而这显然让我在十几页后就放弃阅读了。</p><p>右边是我最近的阅读痕迹，平均每一章会有4-10个新单词，但是不会特别影响我阅读和理解。当然，曾经看过中文小说和电影，无疑帮助我更快理解英文原著。但这不失为一个好的开端：我们总会迈出第一步，如果你也想试着解锁「阅读外文原著」的能力，不妨试着买本外文小说，从感兴趣的、熟悉的开始阅读。</p><p>对了，我最近因为对外文书籍很感兴趣，便发现<a href="https://shop.m.jd.com/?shopId=53449&utm_source=iosapp&utm_medium=appshare&utm_campaign=t_335139774&utm_term=CopyURL&ad_od=share&gx=RnFlxmQPPjHQytR2xpksBEfs">中华商务进口图书旗舰店</a>有很多价格很优惠的正版外文图书（比如《Kite Runner 追风筝的人》竟然只用18元🤣）感兴趣的朋友可以逛逛。如果买书请千万留心淘宝店铺，很多店铺是影印版书籍，并非正版。</p><p><img src="https://s2.loli.net/2022/06/29/2jgfDGAt1EpXcwK.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://s2.loli.net/2022/06/29/uVwj4cJLX8IFprd.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;就在昨晚，我看完了《&lt;a href=&quot;https://www.goodreads.com/book/show/2767052-the-</summary>
+      
+    
+    
+    
+    <category term="生活录" scheme="http://example.com/categories/%E7%94%9F%E6%B4%BB%E5%BD%95/"/>
+    
+    
+    <category term="阅读" scheme="http://example.com/tags/%E9%98%85%E8%AF%BB/"/>
+    
+    <category term="小确幸" scheme="http://example.com/tags/%E5%B0%8F%E7%A1%AE%E5%B9%B8/"/>
+    
+    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《福格行为模型》：成长的关键不是自我鞭策，而是正确的方法</title>
+    <link href="http://example.com/2022/06/04/fogg-behavioural-models/"/>
+    <id>http://example.com/2022/06/04/fogg-behavioural-models/</id>
+    <published>2022-06-03T16:00:00.000Z</published>
+    <updated>2022-07-13T02:24:05.240Z</updated>
+    
+    <content type="html"><![CDATA[<p>从小到大，我们都经常用自我批评来鞭策自己向前，我们会责问自己的内心、拷问自己的动机、提醒自己的心愿——尤其是我们遭受挫折或失败之后。</p><p>这样的心态和方法自然也能帮助我们成长，但是却总是让我们处在一种如履薄冰的心理状态，非常担心犯错，非常担心失败，同时也让我们失去了很多通过快速试错而不断成长的机会。</p><p>之前<a href="https://deskside.zhubai.love/posts/2134538677261934592">和阿颖的桌沿对谈</a>中，阿颖强烈推荐了《<a href="https://www.douban.com/link2/?url=https://book.douban.com/subject/35594496/&query=%E7%A6%8F%E6%A0%BC%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%9E%8B&cat_id=1001&type=search&pos=0">福格行为模型</a>》，而我则向他推荐了《<a href="https://www.douban.com/link2/?url=https://book.douban.com/subject/34326931/&query=%E6%8E%8C%E6%8E%A7%E4%B9%A0%E6%83%AF&cat_id=1001&type=search&pos=0">掌控习惯</a>》。我们俩都觉得很有意思：因为这两本书都是有关建立习惯的方法论。</p><p>前不久我买了并读完了，虽然是一本很厚的书，书名看起来也很学术很吓人，但由于排版很宽松，实际内容并不多；加上案例很多、笔风轻快，读起来也十分轻松。</p><p>我当时读了几章后，向对象介绍了书中的观点。随后我询问他「有什么让你感到意外的吗？」</p><p>他说：「不要自我批评，因为人们在感觉良好的状态下改变，效果最佳」。</p><p>《<a href="https://www.douban.com/link2/?url=https://book.douban.com/subject/35594496/&query=%E7%A6%8F%E6%A0%BC%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%9E%8B&cat_id=1001&type=search&pos=0">福格行为模型</a>》和《<a href="https://www.douban.com/link2/?url=https://book.douban.com/subject/34326931/&query=%E6%8E%8C%E6%8E%A7%E4%B9%A0%E6%83%AF&cat_id=1001&type=search&pos=0">掌控习惯</a>》比较大的差异就在此——前者非常强调对每一次微小进步的庆祝。我们总是对自己很严苛：每一次微小的成功都不值得鼓励，因为这不算什么，这是我们应该做的；每一次微小的失误或失败都让我们陷入自我批评，因为这不应该……</p><p>《<a href="https://www.douban.com/link2/?url=https://book.douban.com/subject/35594496/&query=%E7%A6%8F%E6%A0%BC%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%9E%8B&cat_id=1001&type=search&pos=0">福格行为模型</a>》将这种思维反过来了，鼓励我们及时庆祝每一次微小的进步。哪怕只是在每天完成一个习惯之后，捏紧拳头说一声「耶」，也会让我们逐渐喜欢上这种习惯。</p><p>如果要细分两本书的差异，我会说《<a href="https://www.douban.com/link2/?url=https://book.douban.com/subject/35594496/&query=%E7%A6%8F%E6%A0%BC%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%9E%8B&cat_id=1001&type=search&pos=0">福格行为模型</a>》更具有实操性，而《<a href="https://www.douban.com/link2/?url=https://book.douban.com/subject/34326931/&query=%E6%8E%8C%E6%8E%A7%E4%B9%A0%E6%83%AF&cat_id=1001&type=search&pos=0">掌控习惯</a>》更偏向完整的方法论介绍。当然，我认为两本书都非常棒，推荐给各位读者朋友。</p><p>最后，再分享书中的两个黄金原则：</p><blockquote><p>改变会带来改变。</p></blockquote><blockquote><p>改变要从人们想改变之处开始。</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;从小到大，我们都经常用自我批评来鞭策自己向前，我们会责问自己的内心、拷问自己的动机、提醒自己的心愿——尤其是我们遭受挫折或失败之后。&lt;/p&gt;
+&lt;p&gt;这样的心态和方法自然也能帮助我们成长，但是却总是让我们处在一种如履薄冰的心理状态，非常担心犯错，非常担心失败，同时也让我们失去</summary>
+      
+    
+    
+    
+    <category term="策展计划：阅读" scheme="http://example.com/categories/%E7%AD%96%E5%B1%95%E8%AE%A1%E5%88%92%EF%BC%9A%E9%98%85%E8%AF%BB/"/>
+    
+    
+    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="习惯" scheme="http://example.com/tags/%E4%B9%A0%E6%83%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>写作陷入瓶颈期</title>
+    <link href="http://example.com/2022/06/04/stuck-as-creator/"/>
+    <id>http://example.com/2022/06/04/stuck-as-creator/</id>
+    <published>2022-06-03T16:00:00.000Z</published>
+    <updated>2022-07-13T02:36:54.806Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近，我的创作开始进入了瓶颈期。</p><p>一方面，我觉得自己的写作内容过于零散和碎片，虽然我一直围绕着几个核心主题在写作，但由于每一期内容都是由来自不同主题的碎片组成的，久而久之便显得不够完整和一体。</p><p>之后我会考虑在不同的写作形式之间轮换，即单篇长文、碎片文章集合等。</p><p>另一方面，我的写作冲动开始衰竭。其实，我一直不太相信「热爱可抵岁月漫长」，因为人的生理结构决定了：只凭热爱，是不足以和喜新厌旧的多巴胺抗衡的。</p><p>当然，我更相信「正确的方法可抵岁月漫长」。无论是适当的休息、更改或扩大关注范围，还是如前所述运用微习惯的方法将写作融入日常流程等，我觉得都值得实践。</p><p>以及，正是因为我和各位读者朋友们约定好了「每周六上午见面」，才让我每周都必须鞭策自己坐在电脑桌前，打下千来字，与各位分享我的思考。</p><p>最后，我个人的写作形式偏说理和逻辑，换言之，我的文章缺乏故事的张力。这种写作方式与我个人喜好有关，我喜欢阅读社科作品胜过小说，我更崇尚严谨的逻辑。但是，故事的魅力依然影响着每一个人，生而为人，我们更容易被一则生动的故事吸引，更容易被一则形象的故事说服，更容易从一则有趣的故事开始理解复杂的事物。</p><p>我希望自己能够开始锻炼写故事的能力，但是或许这并不容易，我从小到大更多是一位倾听者，听我的朋友讲述有趣的故事，而非一位讲述者。因此，如果之后的文章中出现蹩脚的故事叙述，也希望各位多加忍耐，如果你能提供一些改进建议就更好了。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;最近，我的创作开始进入了瓶颈期。&lt;/p&gt;
+&lt;p&gt;一方面，我觉得自己的写作内容过于零散和碎片，虽然我一直围绕着几个核心主题在写作，但由于每一期内容都是由来自不同主题的碎片组成的，久而久之便显得不够完整和一体。&lt;/p&gt;
+&lt;p&gt;之后我会考虑在不同的写作形式之间轮换，即单篇长文、碎</summary>
+      
+    
+    
+    
+    <category term="创作者札记" scheme="http://example.com/categories/%E5%88%9B%E4%BD%9C%E8%80%85%E6%9C%AD%E8%AE%B0/"/>
+    
+    
+    <category term="写作" scheme="http://example.com/tags/%E5%86%99%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《我们这一天》</title>
+    <link href="http://example.com/2022/05/28/this-is-us/"/>
+    <id>http://example.com/2022/05/28/this-is-us/</id>
+    <published>2022-05-27T16:00:00.000Z</published>
+    <updated>2022-07-13T02:19:52.532Z</updated>
+    
+    <content type="html"><![CDATA[<p>很少见到一部剧能在连续六季都在豆瓣保持9分以上的高分。</p><p>《<a href="https://www.imdb.com/title/tt5555260/?ref_=fn_al_tt_1">This is us</a>》（中文译名：《<a href="https://www.douban.com/link2/?url=https://movie.douban.com/subject/26794215/&query=%E6%88%91%E4%BB%AC%E8%BF%99%E4%B8%80%E5%A4%A9&cat_id=1002&type=search&pos=1">我们这一天</a>》是一部有关家庭、亲密关系、成长的剧，将我们每个人都可能遇到的难以言表、细致入微的情绪、想法、烦恼和焦虑以非常细腻的方式体现。</p><p>如果要找一个关键词来形容这部剧给我的感受，我选择「勇气」。生活不会永远一帆风顺，我们总是在跌跌撞撞中长大。问题是，我们总是以为只有自己如此，但每个人都在磕磕绊绊地度过一生，我们不是唯一遇到困难的人。</p><p>如果我们想要迎着困难而上、突破自己，或许总时不时地需要有人鼓舞我们、推我们一把、给我们勇气，我想这部剧就有这种「给我以勇气」的力量。具体内容，就留待各位去自己观看了。</p><hr><p>第二季的故事让我突然意识到，即使父母像剧中的 Rebecca 和 Jack 一样努力陪伴、教育和鼓励孩子，孩子依然会在一生中有无数的恐惧、烦恼和焦虑。</p><p>这并不意味着父母的失败。恰恰相反，这意味着这是每个人的必经之路，我们要积淀勇气和实力去打破自己脑海中的怪兽，去尽力与他人沟通。</p><p>沟通是这部剧的「秘诀」。那些藏在心底多年让我们难受的细微情绪，像一根插在心底的倒刺，别人可以不理解它的存在，但不可以否定我们自己对它的感受。如果我们不把它说出来，向父母、家人、朋友、另一半沟通，那或许我们没有办法真正地拔除这根倒刺。</p><hr><p>这部剧的剧情结构也以「反套路」的形式呈现，很多镜头会误导你以为这部剧要向着滥俗情节发展，但没多久却又揭示另一种意想不到的走向。虽然这种「反套路」也是一种套路，但是在观看的时候还是能感觉到剪辑的魅力。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;很少见到一部剧能在连续六季都在豆瓣保持9分以上的高分。&lt;/p&gt;
+&lt;p&gt;《&lt;a href=&quot;https://www.imdb.com/title/tt5555260/?ref_=fn_al_tt_1&quot;&gt;This is us&lt;/a&gt;》（中文译名：《&lt;a href=&quot;https:</summary>
+      
+    
+    
+    
+    <category term="策展计划：影视" scheme="http://example.com/categories/%E7%AD%96%E5%B1%95%E8%AE%A1%E5%88%92%EF%BC%9A%E5%BD%B1%E8%A7%86/"/>
+    
+    
+    <category term="自己" scheme="http://example.com/tags/%E8%87%AA%E5%B7%B1/"/>
+    
+    <category term="成长" scheme="http://example.com/tags/%E6%88%90%E9%95%BF/"/>
+    
+    <category term="父母" scheme="http://example.com/tags/%E7%88%B6%E6%AF%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《超感猎杀》：孤独感的反面是什么？</title>
+    <link href="http://example.com/2022/05/27/sense-8/"/>
+    <id>http://example.com/2022/05/27/sense-8/</id>
+    <published>2022-05-26T16:00:00.000Z</published>
+    <updated>2022-07-13T02:19:39.239Z</updated>
+    
+    <content type="html"><![CDATA[<p>在我上高中的时候，有一次语文作文的主题是「没有人是一座孤岛」。命题作文显然倾斜于和谐互助的社会大同理想，这无可厚非。但是，在我内心深处，我一直觉得「每个人都是究极孤独的个体」。</p><p>我并非因为自闭、内向或其他性格原因才这么觉得，而更多来自于我对人类大脑结构的思考。</p><p>用一个反例证明或许更简单：《三体》中三体星系中的生物，因为星球表面空气稀疏无法良好传声，它们进化出了脑电波交流的生物结构——它们的语言中没有口语，只有书面语和脑电波语。</p><p>这意味着三体人大脑里蹦出来的任何一个想法都相当于广播给了其他三体人。从效率来讲，三体人的沟通无疑是极度高效。但从个体角度分析，三体人的思想无所遁形，我们既可以说它们绝不会孤独，也可以说它们的思想毫无隐私。间谍职业似乎绝不可能出现在三体之上。</p><p>显然，人类的大脑结构并非如此，我认为孤独是人类大脑结构的必然宿命。思想的隐蔽性意味着我们可以思行不一、言行不一，我们可以用行为掩盖自己的思想，但这也意味着没有人能够真正走进另一个的思想世界中。如果「人与人的理解」是百分数，那它永远不可能达到 100%。</p><p>目前为止，很多影视作品都会提及或表现某个角色的孤独，但我从未见过将孤独感反过来体现的影视作品，直到我看了《<a href="https://www.imdb.com/title/tt2431438/?ref_=fn_al_tt_1">Sense8</a>》（中文译名：《<a href="https://www.douban.com/link2/?url=https://movie.douban.com/subject/23011215/&query=%E3%80%8A%E8%B6%85%E6%84%9F%E7%8C%8E%E6%9D%80%E3%80%8B%EF%BC%89&cat_id=1002&type=search&pos=0">超感猎杀</a>》）。</p><p>试想一下，如果你和另一个人完全共享情感、记忆、五官、痛觉、语言、才能等大部分决定了「我是谁」的能力，会是一种什么感觉？</p><ul><li>可以无视地域差距，直接体验对方所处空间内的全部细节。</li><li>可以感受到另一个人的全部细腻情感。</li><li>可以让另一个人接管我们的身体，帮我们完成自己完全不会的事情。</li><li>……</li></ul><p>继续试想一下，如果不是和另一个人，而是和散布在全球的另外七个人通感呢？</p><hr><p>另外几个值得你看《<a href="https://www.imdb.com/title/tt2431438/?ref_=fn_al_tt_1">Sense8</a>》的理由：</p><p>《<a href="https://www.imdb.com/title/tt2431438/?ref_=fn_al_tt_1">Sense8</a>》可能是为数不多的几乎没有也不需要任何特效的科幻题材作品了，所有的「通感」镜头都由八名演员乘飞机在全球各地实拍，剧组成员满世界飞。幸好拍摄时间远远早于2020年，不然这部剧可能就无法顺利拍摄了。</p><p>由于导演姐妹两人本身就是非常出名的变性人，本来她们是导演兄弟，但都分别进行了变性手术。所以本剧中 LGBT 的元素爆表，but in a good way。</p><p>本剧更偏「爽剧」多一些，能看出导演或编剧希望在里面探讨一些更深入、更广泛的话题，但受限于剧本主线和经费，并没有特别多的展开。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;在我上高中的时候，有一次语文作文的主题是「没有人是一座孤岛」。命题作文显然倾斜于和谐互助的社会大同理想，这无可厚非。但是，在我内心深处，我一直觉得「每个人都是究极孤独的个体」。&lt;/p&gt;
+&lt;p&gt;我并非因为自闭、内向或其他性格原因才这么觉得，而更多来自于我对人类大脑结构的思考。</summary>
+      
+    
+    
+    
+    <category term="策展计划：影视" scheme="http://example.com/categories/%E7%AD%96%E5%B1%95%E8%AE%A1%E5%88%92%EF%BC%9A%E5%BD%B1%E8%A7%86/"/>
+    
+    
+    <category term="同性" scheme="http://example.com/tags/%E5%90%8C%E6%80%A7/"/>
+    
+    <category term="孤独" scheme="http://example.com/tags/%E5%AD%A4%E7%8B%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我什么也没干，只是在好好活着</title>
+    <link href="http://example.com/2022/05/26/essay-about-depressive-mood/"/>
+    <id>http://example.com/2022/05/26/essay-about-depressive-mood/</id>
+    <published>2022-05-25T16:00:00.000Z</published>
+    <updated>2022-07-13T02:22:43.880Z</updated>
+    
+    <content type="html"><![CDATA[<p>我首先被《<a href="https://mp.weixin.qq.com/s/btV7AG9cWpHRGywReUL4ew">我什么也没干，只是在好好活着 | 和抑郁情绪共处的315天</a>》开篇的这句话吸引了，让我一下子就对作者产生了好感：</p><blockquote><p>我没有得抑郁症，更不想为这个饱受污名化的群体增加一个数字。我只是情绪生病了，人人都会经历的，再正常不过的现象。</p></blockquote><p>我们都喜欢真诚而善良的人，即使受到抑郁情绪困扰，也尽力避免为他人尤其是备受争议和关注的群体造成困扰，这样的作者怎么会不让人喜欢呢？</p><p>我在之前的 Newsletter 中曾经提到，丰满的细节令人着迷，尤其是身处低谷期的部分。我们都是人，意味着我们必定会经历生命周期的起起伏伏，没有人可以像社交媒体上的照片一样永葆光彩夺目。</p><p>他人的故事往往蕴含着让我们思考和前行的力量。对于我而言，最让我受到启迪的部分来自于她如何思考「与父母的关系」。毕竟，父母是对每个人影响最大的人。</p><blockquote><p>不久之后我回家，我们再次因为相似问题爆发了争吵。我疲倦于他们无止境的误解，想当然的给我下定义。在争吵的过程中，我一边哭一边大声喊，我已经离职了，我已经3个月没有上班了，我骗了你们3个月。……当我说出来那一刻，我明白，父母的理解不再重要了。我一直以来希望达到一种彼此理解的状态，即使是假的，是扮演的，我也贪恋这种平和气氛。我是你们心中的好孩子，而你们赞美我、鼓励我，做我的好爸妈。我畏惧不理解，我害怕关系里的倒刺，我希望每段关系都平滑流畅、和和气气。</p></blockquote><blockquote><p>如今我好像可以平静地接受——我们不用互相理解。我们是家人，我们相亲相爱，有困难时会第一时间互相帮助，但我们不必真的理解对方想做什么。不必再去一遍遍解释。今后的人生，我们必然秉承着完全不同的价值观，不同的行事风格，活成两种样子。不如就此把“彼此说服、统一观念”搁置，我们一起吃饭，旅游，聊八卦聊生活，看电影逛街，我们有更好的、超越“彼此理解”的相处模式。在我明白这件事后，我突然变得轻松起来。</p></blockquote><p>具体的细节不再过多分享了，作者的笔墨让阅读过程轻松而沉浸。最后，援引作者的话送给每一位读者：</p><blockquote><p>治愈的过程如此漫长而绞痛，因而每一刻都值得铭记。我要记下它们。</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;我首先被《&lt;a href=&quot;https://mp.weixin.qq.com/s/btV7AG9cWpHRGywReUL4ew&quot;&gt;我什么也没干，只是在好好活着 | 和抑郁情绪共处的315天&lt;/a&gt;》开篇的这句话吸引了，让我一下子就对作者产生了好感：&lt;/p&gt;
+&lt;blockqu</summary>
+      
+    
+    
+    
+    <category term="策展计划：阅读" scheme="http://example.com/categories/%E7%AD%96%E5%B1%95%E8%AE%A1%E5%88%92%EF%BC%9A%E9%98%85%E8%AF%BB/"/>
+    
+    
+    <category term="人生" scheme="http://example.com/tags/%E4%BA%BA%E7%94%9F/"/>
+    
+    <category term="焦虑" scheme="http://example.com/tags/%E7%84%A6%E8%99%91/"/>
+    
+    <category term="心理学" scheme="http://example.com/tags/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
+    
+    <category term="抑郁" scheme="http://example.com/tags/%E6%8A%91%E9%83%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>哪怕是初学者，也要勇敢分享</title>
+    <link href="http://example.com/2022/05/21/be-brave-to-share/"/>
+    <id>http://example.com/2022/05/21/be-brave-to-share/</id>
+    <published>2022-05-20T16:00:00.000Z</published>
+    <updated>2022-07-13T02:33:29.523Z</updated>
+    
+    <content type="html"><![CDATA[<p>不知道读者朋友们是否曾有过这样子的感觉：</p><p>在事情没有尘埃落定之前，我不敢和别人分享自己的想法、思考和态度。因为，我害怕最后的结果证明我是错的、没用的、胡说八道的。</p><p>这其实是我自己长期以来都有的一种感受，我害怕将自己处于风险之中——一种可能会被人反驳、遭人嘲笑、受人批评的风险。因此，我宁愿息声屏气，将任何经验都埋藏在心底里。</p><p>有人规定过「初学者不得分享」吗？并没有。</p><p>有人规定过「失败者不得分享」吗？并没有。</p><p>有人规定过「从未分享过的人不得分享」吗？并没有，这种思维甚至是一种悖论。</p><p>事实上，当我们看很多现在取得成功的人，分享他们成长历程的时候，最迷人的部分往往不是他们登上顶峰、光芒四射的那一霎那，而是在攀爬过程中的不停摔倒、受挫、自我怀疑，那些黎明前的黑暗映射出了我们所有人共有的迷茫和困惑。</p><p>现在，无人不知乔布斯打造的苹果帝国，但翻开《乔布斯传》，你看到的、感兴趣的是有关他年轻时的偏执、暴躁和迷茫，是他被董事会逼迫离开苹果时的愤怒和迷茫，是他在做出一个又一个两难的商业决定前的思索。</p><p>同样地，无人不知米歇尔·奥巴马，曾经的美国第一夫人。但翻开《成为》，你看到的、感兴趣的是她与丈夫踏上政坛之前，忙忙碌碌的律所生活，主动选择放弃高薪律师职业的纠结和烦恼，选举演讲和照顾女儿两难全的烦忧。</p><p>作为初学者，分享思考的意义，很大一部分在于获得支持和帮助，还有一部分则在于忠实记录自己的成长。写下这段话的契机，主要是我在担心我应不应该分享「老妈对谈」给读者朋友们，这显然会暴露我们的家庭问题，但我却觉得这是一些很不错的参考经验。</p><p>我们无法保证自己十几年后会获得什么样的成就，但每一次对自己成长过程的记录和思考，都给「成为更好的自己」投下了坚定的一票，不是吗？</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;不知道读者朋友们是否曾有过这样子的感觉：&lt;/p&gt;
+&lt;p&gt;在事情没有尘埃落定之前，我不敢和别人分享自己的想法、思考和态度。因为，我害怕最后的结果证明我是错的、没用的、胡说八道的。&lt;/p&gt;
+&lt;p&gt;这其实是我自己长期以来都有的一种感受，我害怕将自己处于风险之中——一种可能会被人反</summary>
+      
+    
+    
+    
+    <category term="创作者札记" scheme="http://example.com/categories/%E5%88%9B%E4%BD%9C%E8%80%85%E6%9C%AD%E8%AE%B0/"/>
+    
+    
+    <category term="勇气" scheme="http://example.com/tags/%E5%8B%87%E6%B0%94/"/>
+    
+    <category term="写作" scheme="http://example.com/tags/%E5%86%99%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>做一个完美的蒸水蛋</title>
+    <link href="http://example.com/2022/05/21/make-steamed-egg/"/>
+    <id>http://example.com/2022/05/21/make-steamed-egg/</id>
+    <published>2022-05-20T16:00:00.000Z</published>
+    <updated>2022-06-29T12:58:43.449Z</updated>
+    
+    <content type="html"><![CDATA[<p>蒸水蛋一直是一种又简单又困难的食物。</p><p>简单之处在于，蒸水蛋的原材料太简单了，鸡蛋、清水、酱油、几滴香油足矣。但是困难之处在于，水蛋比例、火候控制需要很精准，否则要么会变成蒸蛋汤，要么会变成皱巴巴的丑蛋羹。</p><p>最近，我和我妈共同尝试了好多次，终于测试出了比较完美的蒸水蛋方案，在这里与大家分享。</p><ul><li>一个干净的容器。不干净的容器会让蛋液里有空气。</li><li>先打蛋，用筷子将蛋打发至稀状，尽量没有固形物。</li><li>按水蛋1:1的比例加入纯净水，继续用筷子打发至汤状。</li><li>稍微静置几分钟，让蛋液里的空气排出。</li><li>上蒸锅内，初始水温为热水。蒸锅加盖，盛蛋的碗不加盖。</li><li>隔水蒸10分钟，开盖滴香油和酱油，大功告成！</li></ul><p><img src="https://s2.loli.net/2022/06/29/7K64wgSrmUsZOY1.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;蒸水蛋一直是一种又简单又困难的食物。&lt;/p&gt;
+&lt;p&gt;简单之处在于，蒸水蛋的原材料太简单了，鸡蛋、清水、酱油、几滴香油足矣。但是困难之处在于，水蛋比例、火候控制需要很精准，否则要么会变成蒸蛋汤，要么会变成皱巴巴的丑蛋羹。&lt;/p&gt;
+&lt;p&gt;最近，我和我妈共同尝试了好多次，终于测试</summary>
+      
+    
+    
+    
+    <category term="生活录" scheme="http://example.com/categories/%E7%94%9F%E6%B4%BB%E5%BD%95/"/>
+    
+    
+    <category term="小确幸" scheme="http://example.com/tags/%E5%B0%8F%E7%A1%AE%E5%B9%B8/"/>
+    
+    <category term="美食" scheme="http://example.com/tags/%E7%BE%8E%E9%A3%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>坐下来和父母好好聊聊</title>
+    <link href="http://example.com/2022/05/21/sit-and-talk-with-parents/"/>
+    <id>http://example.com/2022/05/21/sit-and-talk-with-parents/</id>
+    <published>2022-05-20T16:00:00.000Z</published>
+    <updated>2022-07-13T02:33:31.876Z</updated>
+    
+    <content type="html"><![CDATA[<p>曾有人说，我们和父母是最熟悉的陌生人。</p><p>谁说不是呢？</p><p>有多少人在成年以后，还能和父母（哪怕其中一方）敞开心扉，认真地聊聊自己的理想、价值观、生活态度？甚至是对方让自己感到不舒服的点，我们都几乎很少触及，因为我们害怕家庭里微妙的关系平衡被打破。</p><p>因为近期我都在家里住，因此不可避免地会和我妈发生过很多摩擦。值得庆幸的是，我妈总体上是一个很有智慧的人，主要体现在她会反思——自己今天哪里做得好、做得不好，有没有什么可以改进的地方，别人哪里做得不好、自己有没有类似的情况？……</p><p>在今年3月初，我妈提出一个想法：「隔一段时间，我们俩坐下来好好聊聊，聊聊对方哪里做得好、做得不好」。我欣然应允，称其为「老妈对谈」。</p><p>值得庆贺的是，到目前为止两个月的时间，我们一共谈了4次。我认为效果还是很不错的。很多话，如果不挑明了说，对方不可能知道自己的真实想法。</p><p>我认为，每个人的大脑都是一个「思想黑盒」。一方面，我们期待着别人的理解，希望这种理解像光一样照进来。但是另一方面，我们往往又自我封闭，不愿与他人言说真实想法，如果盒子是纯黑的，那我们又如何让别人的光照射进来？</p><p>我们和对象之间，往往发生了矛盾会去沟通解决，因为我们深知如果矛盾不解决，对方很有可能会抽身离开。</p><p>但我们和父母之间却不然，因为无论发生多大的争吵，我们都知道父母不可能离我们而去，父母也知道我们不可能永远离开。因此我们常常搁置纠纷，让它大事化小、小事化了，却很少与父母好好谈一谈。</p><p>我和我妈的「老妈对谈」争端解决机制大概是这样运作的：</p><ul><li>我们因为某事发生了争执或争吵，之后我们可能会谁也不理谁一两天。但我们会找一个时间坐下来，让对方说说自己在这件事上哪里做得不好，或者哪里做得让自己感到不适。</li><li>我们会拿纸笔记录。</li><li>在这个过程中，我们依然可能会争执，但基本上双方都保持了理性，会尽力用自己的理论和观念说服对方，而非像吵架时那样情绪化。</li><li>如果无法达成一致，我们会尽量选择一个择中的方案。比如，有些对方听了很不开心的敏感词汇，另一方就承诺不再说，即使不能理解为什么这些词是敏感的。</li></ul><p>当然，不是必须等到某次争吵爆发，我们才会记录。事实上，生活中总有一些小摩擦，我们也会保持记录，等累积到下次对谈时一并言说。</p><p>沟通不是魔法，我们没有办法挥一挥魔棒就让对方感我所感、想我所想。我想，沟通是一次又一次不懈的尝试，基于一个简单的事实：我希望和对方一起融洽相处，成为更好的自己。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;曾有人说，我们和父母是最熟悉的陌生人。&lt;/p&gt;
+&lt;p&gt;谁说不是呢？&lt;/p&gt;
+&lt;p&gt;有多少人在成年以后，还能和父母（哪怕其中一方）敞开心扉，认真地聊聊自己的理想、价值观、生活态度？甚至是对方让自己感到不舒服的点，我们都几乎很少触及，因为我们害怕家庭里微妙的关系平衡被打破。&lt;/</summary>
+      
+    
+    
+    
+    <category term="论他人作为自己" scheme="http://example.com/categories/%E8%AE%BA%E4%BB%96%E4%BA%BA%E4%BD%9C%E4%B8%BA%E8%87%AA%E5%B7%B1/"/>
+    
+    
+    <category term="沟通" scheme="http://example.com/tags/%E6%B2%9F%E9%80%9A/"/>
+    
+    <category term="父母" scheme="http://example.com/tags/%E7%88%B6%E6%AF%8D/"/>
+    
+  </entry>
+  
+</feed>
