@@ -124,9 +124,9 @@
     
     <category term="人生" scheme="http://example.com/tags/%E4%BA%BA%E7%94%9F/"/>
     
-    <category term="写作" scheme="http://example.com/tags/%E5%86%99%E4%BD%9C/"/>
-    
     <category term="焦虑" scheme="http://example.com/tags/%E7%84%A6%E8%99%91/"/>
+    
+    <category term="写作" scheme="http://example.com/tags/%E5%86%99%E4%BD%9C/"/>
     
   </entry>
   
