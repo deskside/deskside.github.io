@@ -486,9 +486,9 @@
     <category term="创作者札记" scheme="http://deskside.github.io/categories/%E5%88%9B%E4%BD%9C%E8%80%85%E6%9C%AD%E8%AE%B0/"/>
     
     
-    <category term="写作" scheme="http://deskside.github.io/tags/%E5%86%99%E4%BD%9C/"/>
-    
     <category term="勇气" scheme="http://deskside.github.io/tags/%E5%8B%87%E6%B0%94/"/>
+    
+    <category term="写作" scheme="http://deskside.github.io/tags/%E5%86%99%E4%BD%9C/"/>
     
   </entry>
   
