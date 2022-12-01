@@ -6,7 +6,7 @@
   <link href="http://deskside.github.io/atom.xml" rel="self"/>
   
   <link href="http://deskside.github.io/"/>
-  <updated>2022-11-30T06:28:44.000Z</updated>
+  <updated>2022-11-30T10:07:31.000Z</updated>
   <id>http://deskside.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://deskside.github.io/2022/11/30/hide-app-on-iphone/"/>
     <id>http://deskside.github.io/2022/11/30/hide-app-on-iphone/</id>
     <published>2022-11-29T16:00:00.000Z</published>
-    <updated>2022-11-30T06:28:44.000Z</updated>
+    <updated>2022-11-30T10:07:31.000Z</updated>
     
-    <content type="html"><![CDATA[<div class="tag-plugin tabs" align="center"id="tab_3""><ul class="nav-tabs"><li class="tab"><a href="#tab_3-1">中文</a></li><li class="tab active"><a href="#tab_3-2">English</a></li></ul><div class="tab-content"><div class="tab-pane" id="tab_3-1"><div class="tag-plugin note" color="red"><div class="title"><strong>请注意</strong></div><div class="body"><p>技术类文章并不一定会进行中文翻译。如此文章无中文翻译，请移步英文界面阅读。</p></div></div></div><div class="tab-pane active" id="tab_3-2"><p>Rumor has it that Chinese policeman will randomly check people’s phone while taking public transportation or just walking on the road. If apps which are not supposed to be downloaded in China mainland are found, such as Twitter, Telegram, Facebook and so on, the phone owner would be fined.</p><p>This brings a lot concern. I want to find a secure way to help hide those apps in my iPhone. Here are some solutions.</p><h2 id="The-most-secure-way-have-2-phones"><a href="#The-most-secure-way-have-2-phones" class="headerlink" title="The most secure way: have 2 phones"></a>The most secure way: have 2 phones</h2><p>Buying another phone shall be the most secure way. </p><p>Remember to only download apps and store files that are legitimate in China mainland in this new phone. </p><p>Always take it with you and whenever facing a check from the authority, just hand out this one.</p><p>However, this can be cumbersome as well as money-costing.</p><h2 id="For-android-phone-user-Turn-on-the-guest-mode"><a href="#For-android-phone-user-Turn-on-the-guest-mode" class="headerlink" title="For android phone user: Turn on the guest mode"></a>For android phone user: Turn on the guest mode</h2><p>Most android phones support guest mode nowadays.</p><p>After setting up a new set of lock-screen password, whenever this password is passed in to unlock the phone, it will show another home screen rather than the one owner uses on a daily basis.</p><h2 id="For-iPhone-user-Turn-off-some-settings"><a href="#For-iPhone-user-Turn-off-some-settings" class="headerlink" title="For iPhone user: Turn off some settings"></a>For iPhone user: Turn off some settings</h2><p>Unfortunately iPhone doesn’t support guest mode even until iOS 16. Any app being downloaded on this phone can be found in App Gallery.</p><p>All we can do is to make it invisible from the Spotlight search:</p><ol><li>Go to <code>Setting</code>.</li><li>Find the App you want to hide.</li><li>Tap on <code>Siri and Search</code>.</li><li>Simply turn off every toggle in this page.</li></ol><h2 id="Lock-the-app-with-password"><a href="#Lock-the-app-with-password" class="headerlink" title="Lock the app with password"></a>Lock the app with password</h2><p>If you are still worried about those apps being opened by others, </p></div></div></div>]]></content>
+    <content type="html"><![CDATA[<div class="tag-plugin tabs" align="center"id="tab_3""><ul class="nav-tabs"><li class="tab"><a href="#tab_3-1">中文</a></li><li class="tab active"><a href="#tab_3-2">English</a></li></ul><div class="tab-content"><div class="tab-pane" id="tab_3-1"><div class="tag-plugin note" color="red"><div class="title"><strong>请注意</strong></div><div class="body"><p>技术类文章并不一定会进行中文翻译。如此文章无中文翻译，请移步英文界面阅读。</p></div></div></div><div class="tab-pane active" id="tab_3-2"><p>Rumor has it that Chinese policeman will randomly check people’s phone while taking public transportation or just walking on the road. If apps which are not supposed to be downloaded in China mainland are found, such as Twitter, Telegram, Facebook and so on, the phone owner would be fined.</p><p>This brings a lot concern. I want to find a secure way to help hide those apps in my iPhone. Here are some solutions.</p><h2 id="The-most-secure-way-Buy-another-back-up-phone"><a href="#The-most-secure-way-Buy-another-back-up-phone" class="headerlink" title="The most secure way: Buy another back-up phone"></a>The most secure way: Buy another back-up phone</h2><p>Buying another phone shall be the most secure way. </p><p>Remember to only download apps and store files that are legitimate in China mainland in this new phone. </p><p>Always take it with you and whenever facing a check from the authority, just hand out this one.</p><p>However, this can be cumbersome as well as money-costing.</p><h2 id="For-android-phone-user-Turn-on-the-guest-mode"><a href="#For-android-phone-user-Turn-on-the-guest-mode" class="headerlink" title="For android phone user: Turn on the guest mode"></a>For android phone user: Turn on the guest mode</h2><p>Most android phones support guest mode nowadays.</p><p>After setting up a new set of lock-screen password, whenever this password is passed in to unlock the phone, it will show another home screen rather than the one owner uses on a daily basis.</p><h2 id="For-iPhone-user-Turn-off-some-settings"><a href="#For-iPhone-user-Turn-off-some-settings" class="headerlink" title="For iPhone user: Turn off some settings"></a>For iPhone user: Turn off some settings</h2><p>Unfortunately iPhone doesn’t support guest mode even until iOS 16. Any app being downloaded on this phone can be found in App Gallery.</p><p>All we can do is to make it invisible from the Spotlight search:</p><ol><li>Go to <code>Setting</code>.</li><li>Find the App you want to hide.</li><li>Tap on <code>Siri and Search</code>.</li><li>Simply turn off every toggle in this page.</li></ol><h2 id="Lock-the-app-with-password"><a href="#Lock-the-app-with-password" class="headerlink" title="Lock the app with password"></a>Lock the app with password</h2><p>If you are still worried about those apps being opened by others, we can lock them:</p><ol><li>Go to <code>Setting</code>.</li><li>Find <code>Screen Time</code>.</li><li>Choose the apps that you don’t want others to find in <code>App Limits</code>, and set the time limit to 1 minute.</li><li>Add a passcode in <code>Screen Time Passcode</code>.</li></ol><p>However, this still left 1 minute usage for others. But it’s the best way right now since Apple have not introduced lock-app feature.</p></div></div></div>]]></content>
     
     
       
@@ -33,10 +33,10 @@
     
     
     
-    <category term="Coding Notes" scheme="http://deskside.github.io/categories/Coding-Notes/"/>
+    <category term="Coding Notes" scheme="http://deskside.github.io/categories/coding-notes/"/>
     
     
-    <category term="Human right" scheme="http://deskside.github.io/tags/Human-right/"/>
+    <category term="Human right" scheme="http://deskside.github.io/tags/human-right/"/>
     
   </entry>
   
@@ -57,10 +57,10 @@
     
     
     
-    <category term="Coding Notes" scheme="http://deskside.github.io/categories/Coding-Notes/"/>
+    <category term="Coding Notes" scheme="http://deskside.github.io/categories/coding-notes/"/>
     
     
-    <category term="Core Data" scheme="http://deskside.github.io/tags/Core-Data/"/>
+    <category term="Core Data" scheme="http://deskside.github.io/tags/core-data/"/>
     
   </entry>
   
@@ -81,12 +81,12 @@
     
     
     
-    <category term="Coding Notes" scheme="http://deskside.github.io/categories/Coding-Notes/"/>
+    <category term="Coding Notes" scheme="http://deskside.github.io/categories/coding-notes/"/>
     
     
-    <category term="Core Data" scheme="http://deskside.github.io/tags/Core-Data/"/>
+    <category term="Core Data" scheme="http://deskside.github.io/tags/core-data/"/>
     
-    <category term="SwiftUI" scheme="http://deskside.github.io/tags/SwiftUI/"/>
+    <category term="SwiftUI" scheme="http://deskside.github.io/tags/swiftui/"/>
     
   </entry>
   
@@ -107,10 +107,10 @@
     
     
     
-    <category term="Coding Notes" scheme="http://deskside.github.io/categories/Coding-Notes/"/>
+    <category term="Coding Notes" scheme="http://deskside.github.io/categories/coding-notes/"/>
     
     
-    <category term="Swift" scheme="http://deskside.github.io/tags/Swift/"/>
+    <category term="Swift" scheme="http://deskside.github.io/tags/swift/"/>
     
   </entry>
   
@@ -131,12 +131,12 @@
     
     
     
-    <category term="Coding Notes" scheme="http://deskside.github.io/categories/Coding-Notes/"/>
+    <category term="Coding Notes" scheme="http://deskside.github.io/categories/coding-notes/"/>
     
     
-    <category term="GitHub" scheme="http://deskside.github.io/tags/GitHub/"/>
+    <category term="GitHub" scheme="http://deskside.github.io/tags/github/"/>
     
-    <category term="Xcode" scheme="http://deskside.github.io/tags/Xcode/"/>
+    <category term="Xcode" scheme="http://deskside.github.io/tags/xcode/"/>
     
   </entry>
   
@@ -145,7 +145,7 @@
     <link href="http://deskside.github.io/2022/07/23/how-to-build-a-personal-blog/"/>
     <id>http://deskside.github.io/2022/07/23/how-to-build-a-personal-blog/</id>
     <published>2022-07-22T16:00:00.000Z</published>
-    <updated>2022-11-23T02:16:23.870Z</updated>
+    <updated>2022-11-30T14:25:45.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>在前几期 Newsletter 中，我向各位读者朋友介绍了我的<a href="https://deskside.github.io/">个人网站</a>，有读者朋友回信咨询如何建立，加上我也想要复盘一下心得和方法，因此就有了这篇文章。</p><p>于我而言，个人网站更像是一个自留地，不受各种算法的影响。我可以尽情地在这里发布、整理文章，不用担心干扰。</p><p>我的个人网站，实际上是「博客」。博客其实是一个互联网非常古早的产物了。在我读小学的时候，我舅舅就经常写新浪博客，甚至来我们家做客的时候，还要关心家里电脑能否联网给他看一下博客。</p><p>但随着互联网发展，博客这种「安静」的信息传递方式已经难以为企业赚钱了，企业纷纷转向了视频、公众号这种「聒噪」的方式，争夺用户的注意力。</p><p>这意味着两件事情：一是现在博客的关注度确实不高，二则是发展多年的博客，技术已经十分平民化了。事实上，无需高深的编程和代码知识，任何会操作电脑的人都能够跟着教程一步一步完成。</p><p>值得一提的是，我们在网上搜到的其他建站教程，有些会宣称「不用一行代码」。事实上，想在由计算机构成的互联网世界有一片自留地、又不依托任何社交平台，必然需要一定量的编程知识。</p><p>当然，如前所述，你不需要学过编程，掌握这些知识也不难。</p><h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><p>事实上，我想先强调一些有关建站的基础：</p><ul><li>坚持写作、拍视频等创作能力。</li><li>使用外网的能力。</li><li>查阅（英文）文档的能力。</li></ul><p>这三个能力，我想缺一不可。关键在于，即使你现在没有也没关系。谁的能力不是慢慢强化得来的呢？我们会在一天天的发展中，逐渐获得并强化这些能力。我逐一解释：</p><p><strong>坚持创作</strong>。建站给人的感觉很酷，但是如果只有一个空壳的话，再酷也不会吸引人长久驻留。</p><p><strong>使用外网</strong>。无论是后文需要使用的 GitHub，还是大部分国际公认的优秀网站，如 Figma、Notion 等，基本都来自于欧美国家（这并非指中国大陆没有优秀的互联网产品）。个中原因不在此分析，只是从结果来看：我们如果不掌握使用外网的能力，将会错过互联网世界的绝大部分美景。</p><p><strong>查阅（英文）文档</strong>。文档通常是一个互联网产品的说明书。至于为什么需要英文能力，和第二点的原因类似，既然众多优秀网站和产品都来自于海外，那在语言上势必优先支持英文。况且，当我们遇到问题时，很多解决方案也是由英文写就的。</p><p>多嘴说一句，我遇到了很多人声称自己「英语不好」，听来只觉痛心。语言并非天堑鸿沟，退一万步说，我们每个人都至少熟练掌握了一门语言：中文（普通话或方言）。只要多运用，任何语言都会逐渐成为我们身体的一部分。因此，别再说自己英语不好了，不如说自己「英语暂时不熟悉，还需要多说多看」。</p><p>我并非计算机系，未经过系统的专业化训练。在以下教程中，可能会出现错误，还请海涵和指正。本文会同步发表于个人网站，如需更好的代码复制体验可以移步此处。</p><hr><p>在第一章的最后，我想分享编程区 up 主 Codesheep 在视频<a href="https://www.bilibili.com/video/BV1Yb411a7ty?spm_id_from=333.1007.top_right_bar_window_history.content.click">手把手教你从0开始搭建自己的个人博客</a>中说过的一句话：</p><blockquote><p>不要怕遇到问题，因为你一定会遇到问题。没关系，解决问题就好了。</p></blockquote><p>我在 2020 年的时候也曾经尝试建立个人博客，预期太高、以为会很顺利，结果一直不断遇到一些小问题，感觉受挫、没一会儿就放弃了。不久前刷到了技术博主的视频，这句话给了我很大的信心和勇气。</p><p>每个人的电脑配置、网络环境各有差异，你一定会遇到大大小小的问题。没关系，遇到问题就去寻找解决方案，逐个尝试后，解决掉就好了！</p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>正常来说，以下安装过程适用于 Windows、macOS、Linux。</p><p>与网上能找到的绝大多数相似教程相比，我更想用一种诗意的比喻方式来我们可以将最终的网站成品类比为「一个装饰精美的储物盒，盒子里装着一沓纸」。</p><h3 id="打造工作台：构筑环境"><a href="#打造工作台：构筑环境" class="headerlink" title="打造工作台：构筑环境"></a>打造工作台：构筑环境</h3><p>首先，构筑环境。我们需要一个「工作台」来加工和维护储物盒。如果我们的工作间是我们的电脑，那工作台便是 <a href="https://nodejs.org/en/">Node.js</a> 和 <a href="https://git-scm.com/download/win">Git</a> 。你不需要理解它们的原理，但我们需要在电脑里安装它们。</p><p>请分别点击链接进入二者的官网，网页一般会默认提供适配当前电脑的下载选项。</p><ul><li>Node.js 请选择左边的绿色方框下载。</li><li>Git 请选择 Standalone Installer 中的 64-bit Git for Windows Setup（如果你知道自己的电脑是 32 位版本，请选择 32-bit Git for Windows Setup）。</li></ul><h3 id="找到好工具：使用终端"><a href="#找到好工具：使用终端" class="headerlink" title="找到好工具：使用终端"></a>找到好工具：使用终端</h3><p>有了工作台，有了目标，我们还需要一个趁手的扳手来执行操作。无论是什么系统，每台电脑都提供了这个扳手，那就是「<a href="https://sspai.com/post/45534">终端</a>」。</p><p>终端实际上是我们与电脑「直接沟通」的中介，平常我们用电脑时的各种软件其实是我们与电脑「间接沟通」的中介。</p><p>终端无需额外下载，你可以在搜索中（Windows 中敲击 win+s，macOS 中敲击 command+space）输入终端二字打开。你可以考虑<a href="https://docs.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell?view=powershell-7.2">在 Windows、Linux 和 macOS 上安装 PowerShell</a>，对 Windows 用户的体验优化很明显。</p><p>终端实际上是在特定文件夹内的操作，因此在你的输入位置前总是有一行文件路径名。因此，有两个命令很重要。（#号后面为注释内容，请不要在终端中输入#号后面的内容，下同）</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd folderName #进入名为folderName的子文件夹中</span><br><span class="line">cd..          #返回上级文件夹</span><br></pre></td></tr></table></figure><h3 id="先打造外框：博客框架"><a href="#先打造外框：博客框架" class="headerlink" title="先打造外框：博客框架"></a>先打造外框：博客框架</h3><p>一个储物盒，如果没有稳定的框架，势必会散架。对于博客而言，框架便是 <a href="https://hexo.io/zh-cn/index.html">Hexo</a> 。</p><p>Hexo 自 2012 年发布以来，已经稳定提供服务 10 年，由台北人陳嘉輝（Tommy Chen）编写。基本上，如果你想要搭建博客，框架不是选择 Hexo 便就是 Hugo，足以证明其强大。</p><p>与我们日常安装软件不同，Hexo 的安装只需要一行代码即可。但是，在哪里输入代码呢？</p><p>我们可以在任意位置新建文件夹，右键菜单中选择「在终端中打开」。以下所有代码，每一行输入后需敲击一次 Enter 键。</p><p>在弹出的窗口中，我们逐行输入以下代码，检查工作台是否搭建好了（检查 Node.js 和 Git 是否安装好了）。如果分别出现一行版本号，即安装完毕。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v #检查node版本</span><br><span class="line">npm -v  #检查npm版本</span><br></pre></td></tr></table></figure><p>由于国内网络环境限制，电脑访问外网通常非常缓慢。我们需要将工作台改为中国大陆版本（即更改镜像源）。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure><p>紧接着，确认工作台无误后，我们便可以先打造好博客框架了（安装Hexo）。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure><p>我们同样需要检查我们的博客框架是否打造好了（检查Hexo安装情况）。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure><h3 id="开始造盒子：建储物盒"><a href="#开始造盒子：建储物盒" class="headerlink" title="开始造盒子：建储物盒"></a>开始造盒子：建储物盒</h3><p>框架已经完成，意味着我们拥有了建储物盒的模具。我们便可以使用模具来创建第一个储物盒。</p><p>你可以在你电脑的任意位置新建文件夹，既然我们要建立个人博客，那就起名「blog」吧！随后，在「blog」文件夹内，右键菜单中选择「在终端中打开」。以上操作，你也可以在终端中输入以下代码代替：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog      # 初始化创建，会在你所在位置创建 blog 文件夹</span><br><span class="line">cd blog             # 进入 blog 目录</span><br><span class="line">npm install         # 进一步安装hexo所需文件</span><br></pre></td></tr></table></figure><p>稍等一会儿，略显粗糙的第一个储物盒就建好了！</p><p>什么，你没看到？仔细看看刚才的文件夹，里面应该出现了不少文件。这些配置文件便构筑起了我们的储物盒。回到终端里，继续输入：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean          # 清除所有记录</span><br><span class="line">hexo generate       # 生成静态网页</span><br><span class="line">hexo s              # 启动服务，默认端口号是4000</span><br></pre></td></tr></table></figure><p>接下来，我们使用浏览器打开 <a href="http://localhost:4000/">http://localhost:4000/</a> ，便可以看到一个默认的储物盒了。</p><h3 id="自定义外观：博客主题"><a href="#自定义外观：博客主题" class="headerlink" title="自定义外观：博客主题"></a>自定义外观：博客主题</h3><p>我们都喜欢好看的东西，对于网站亦如此。随着 Hexo 这么多年的发展，来自全球的开发者已经为其创造了 <a href="https://hexo.io/themes/">300 多个风格各异的主题</a>，足够让你挑花眼。</p><p>你可以随意浏览。点击图片可以进入该主题的范例网站，点击标题可以进入该主题的 GitHub 页面。GitHub 页面中一般会写明安装方法和配置要求。实际上，安装方法无外乎两种：</p><p>第一种，在 GitHub 页面中点击蓝色的 Code 按钮，选择「Download ZIP」，下载包含该主题所有代码的文件。解压后放入我们的「blog」文件夹中的「themes」中（下文将使用「blog&#x2F;themes」表达相同意思）。</p><p>第二种，在使用一行代码，从终端直接同步该主题的所有代码。通常在博客的Github页面都会写明如何安装。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone xxx themes/yyy</span><br><span class="line"># xxx通常为该Github页面的网址</span><br><span class="line"># yyy通常为该Hexo主题的名字</span><br></pre></td></tr></table></figure><p>值得注意的是，如果你遇到了 GitHub 访问很慢、无法git clone的情况，你可以采取「曲线救国」的策略。Gitee 是国内类似 Github 的代码托管网站，注册后，在「+」中选择「从 Github&#x2F;Gitlab 中导入仓库」，输入你想要的Github网址。</p><p>安装好之后的下一步，是配置。即在各个主题提供的范围内进行自定义。每个主题都各有不同，在这里无法逐一介绍。请发挥前述提到的第三个能力，根据主题的 GitHub 中的 README 文档，完成该任务吧！</p><p>值得强调的是，丰富的主题其实是一把双刃剑，好处是我们可以为网站精挑细选主题，但坏处便是我们很容易深陷其中、舍本逐末。好的网站，最重要的并不是外观，而是内容。如果没有扎实、吸引人的内容，访客的鼠标只会快速点击「关闭」键，和你说再见。</p><p>我的<a href="https://deskside.github.io/">个人网站</a>目前看起来非常有模有样，很大一部分原因是我已经在前期有了长足的文章积累。在完成前面的步骤之后，我其实只需要将文章复制粘贴生成即可，</p><h3 id="向世界发布：部署网站"><a href="#向世界发布：部署网站" class="headerlink" title="向世界发布：部署网站"></a>向世界发布：部署网站</h3><p>部署（deploy），听起来很高级，但是我们可以理解为将博客从本地发布到云端，让我们可以通过一行网址访问。</p><p>由于该部分内容并不难，请参阅<a href="https://easyhexo.com/1-Hexo-install-and-config/1-4-deploy-hexo.html#%E9%83%A8%E7%BD%B2%E5%88%B0-github">部署 Hexo | Easy Hexo 👨‍💻</a>的教程进行配置。</p><p>出于安全性考虑，GitHub 应该会要求用户提供 SSHkey，你可以理解为电脑和 GitHub 之间的「暗号」，请参阅<a href="https://www.runoob.com/w3cnote/view-ssh-public-key.html">查看本机 ssh 公钥，生成公钥</a>。</p><p>值得一提的是，我并不推荐你部署到国内代码托管网站，如 Gitee。不推荐的理由是老生常谈了：审查机制。以 Gitee 为例，每一次网址重新发布，用户都必须进入 Gitee 手动点击部署，十分麻烦。除此之外，Gitee 会使用机器以不明朗的规则审查文字，十分正常的内容也可能被判定违规、不予部署。</p><p>当然，Gitee 的（唯一）好处是国内访问速度很快。相比之下，GitHub 作为真正开源的国际网站，在国内访问速度并不稳定。请自行斟酌考量部署网站的选择。</p><p>如果你具有更强的能力可以将博客部署到自己的服务器、域名之上，那自然是再好不过了。即便没有，使用 GitHub 等网站提供的部署服务也非常方便优雅。</p><h2 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h2><h3 id="我怎么写"><a href="#我怎么写" class="headerlink" title="我怎么写"></a>我怎么写</h3><p>所有的博客文章，我们都可以在本地的<code>博客文件夹名字/source/_post</code>中看到，并且会以 <code>.md</code>格式存在，md 是 markdown 的缩写。</p><p>如果你完全不知道 markdown 是什么，那么你必须先阅读<a href="https://sspai.com/post/25137">认识与入门 Markdown</a>，了解 markdown 的常用语法。别担心，这不仅学起来很简单，学会之后，也会让我们以后的文字处理都变得简单起来。</p><p>如果你对常用 markdown 语法有所遗忘，请随时查阅<a href="https://markdown.com.cn/cheat-sheet.html#%E6%80%BB%E8%A7%88">Markdown 语法速查表</a>。</p><p>如果你想选择一款好用的 markdown 编辑器，你可以在这些<a href="https://markdown.com.cn/tools.html#%E7%BC%96%E8%BE%91%E5%99%A8">Markdown 工具</a>中进行选择。当然，电脑自带的纯文本工具（即记事本或文本编辑）其实也完全足以编辑，只不过无法对你写下来的 markdown 语法进行即时渲染。</p><p>当你想要新建一篇文章时，你可以二选一：</p><ul><li>直接在前述文件夹中右键新建md文件，并编辑其中的内容。</li><li>使用终端命令 <code>hexo new post xxx</code>，xxx为博客网址名。</li></ul><h3 id="基础信息"><a href="#基础信息" class="headerlink" title="基础信息"></a>基础信息</h3><p>每篇 hexo 文章都会需要一个 front-matter，用以告知这篇文章的基础信息是什么。通常而言，「标题、日期、标签、分类」即足矣。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: xxx</span><br><span class="line">date: 2022-7-23</span><br><span class="line">tag: [a,b,c]</span><br><span class="line">categories: yyy</span><br><span class="line">---</span><br></pre></td></tr></table></figure><p>如果你还想了解更多，请参阅<a href="https://hexo.io/zh-cn/docs/front-matter">Front-matter | Hexo</a>。值得注意的是，每个主题通常都会提供一些特殊的信息用以配置 front-matter，你通常可以在主题的 GitHub 页面中找到配置指南。</p><h3 id="多台电脑"><a href="#多台电脑" class="headerlink" title="多台电脑"></a>多台电脑</h3><p>如果你拥有两台及以上的电脑，希望每台电脑上你都可以编辑博客内容并发布，你可以参阅<a href="https://www.jianshu.com/p/4bcf2848b3fc">多台电脑使用Hexo</a>。过程很简单，因此在此不再复述。</p><h2 id="彩蛋：插入-B-站或-YouTube-视频"><a href="#彩蛋：插入-B-站或-YouTube-视频" class="headerlink" title="彩蛋：插入 B 站或 YouTube 视频"></a>彩蛋：插入 B 站或 YouTube 视频</h2><h3 id="基础操作"><a href="#基础操作" class="headerlink" title="基础操作"></a>基础操作</h3><p>绝大部分的 Hexo 主题，都支持通过一行复制粘贴的代码嵌入 B 站或 YouTube 的视频，非常适合视频创作者来构建自己的个人网站。那么，这行神奇的代码从哪里复制来呢？</p><p>很简单，用浏览器打开任意你想要嵌入的视频，找到分享按钮里的「嵌入」键，拷贝由 B 站或 YouTube 提供的这行代码，并将这行代码粘贴到博客文章中去。当然，不只限于这两个视频网址，任何提供嵌入代码的视频网站都可以。</p><p>重新渲染博客后，打开对应页面，你就可以看到一个可以直接在网页内点击播放的视频了！</p><h3 id="时分跳转"><a href="#时分跳转" class="headerlink" title="时分跳转"></a>时分跳转</h3><p>涉及视频插入的场景，我们常常会想要指明几分几秒。比如我们想要插入一个教程，但我们想特别注明只需从第 2 分 30 秒开始看就好了。那我们应该如何操作呢？</p><p>对于 Youtube 视频，非常简单，嵌入功能原生支持设置时间节点。我们只需要在嵌入界面设置「2:30」或「150」即可，前者为几分几秒，后者为秒数，二者等效。</p><p>对于B站视频，则显得稍微麻烦些许。我们需要在提供的代码中的「src」引号内的最后添加上「&amp;t&#x3D;02m30s」。如果视频有多个分p，你可以添加「p&#x3D;2&amp;t&#x3D;02m30s」，用以表示跳转至第2部分的第2分30秒。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># B站提供的视频嵌入代码</span><br><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">&quot;//player.bilibili.com/player.html?aid=291374696&amp;bvid=BV1uf4y1b7R8&amp;cid=360416569&amp;page=1&quot;</span> <span class="attr">scrolling</span>=<span class="string">&quot;no&quot;</span> <span class="attr">border</span>=<span class="string">&quot;0&quot;</span> <span class="attr">frameborder</span>=<span class="string">&quot;no&quot;</span> <span class="attr">framespacing</span>=<span class="string">&quot;0&quot;</span> <span class="attr">allowfullscreen</span>=<span class="string">&quot;true&quot;</span>&gt;</span> <span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br><span class="line"></span><br><span class="line"># 在「src」引号内的最后添加「&amp;t=02m30s」</span><br><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">&quot;//player.bilibili.com/player.html?aid=291374696&amp;bvid=BV1uf4y1b7R8&amp;cid=360416569&amp;page=1&amp;t=02m30s&quot;</span> <span class="attr">scrolling</span>=<span class="string">&quot;no&quot;</span> <span class="attr">border</span>=<span class="string">&quot;0&quot;</span> <span class="attr">frameborder</span>=<span class="string">&quot;no&quot;</span> <span class="attr">framespacing</span>=<span class="string">&quot;0&quot;</span> <span class="attr">allowfullscreen</span>=<span class="string">&quot;true&quot;</span>&gt;</span> <span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure><h3 id="宽高调整"><a href="#宽高调整" class="headerlink" title="宽高调整"></a>宽高调整</h3><p>在具体的网页渲染中，我们还可以指明播放器的宽度和高度。</p><p>无论是 YouTube 还是 B 站提供的播放器，我们都可以在第一个括号内加上一段代码，这样子我们便可以自定义播放器的宽高了。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 添加宽高参数以前</span><br><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">&quot;//player.bilibili.com/player.html?aid=291374696&amp;bvid=BV1uf4y1b7R8&amp;cid=360416569&amp;page=1&amp;t=02m30s&quot;</span> <span class="attr">scrolling</span>=<span class="string">&quot;no&quot;</span> <span class="attr">border</span>=<span class="string">&quot;0&quot;</span> <span class="attr">frameborder</span>=<span class="string">&quot;no&quot;</span> <span class="attr">framespacing</span>=<span class="string">&quot;0&quot;</span> <span class="attr">allowfullscreen</span>=<span class="string">&quot;true&quot;</span>&gt;</span> <span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br><span class="line"></span><br><span class="line"># 添加宽高参数以后，注意每个参数之间需要有空格</span><br><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">&quot;//player.bilibili.com/player.html?aid=291374696&amp;bvid=BV1uf4y1b7R8&amp;cid=360416569&amp;page=1&amp;t=02m30s&quot;</span> <span class="attr">scrolling</span>=<span class="string">&quot;no&quot;</span> <span class="attr">border</span>=<span class="string">&quot;0&quot;</span> <span class="attr">frameborder</span>=<span class="string">&quot;no&quot;</span> <span class="attr">framespacing</span>=<span class="string">&quot;0&quot;</span> <span class="attr">allowfullscreen</span>=<span class="string">&quot;true&quot;</span> <span class="attr">width</span>=<span class="string">&quot;100%&quot;</span> <span class="attr">height</span>=<span class="string">&quot;300&quot;</span>&gt;</span> <span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure><p>你可以输入两种类型的值来定义宽或高：</p><ul><li>百分比，即播放器占浏览器的百分比。如「width&#x3D;”100%”」。</li><li>纯数字，即像素值。如「height&#x3D;”300”」。</li></ul><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>到此为止，我的一个小梦想已经圆了：建立个人网站。</p><p>于我而言，在互联网上有一个自己的域名，打开后装满了自己设计和书写的内容，带来的成就感和满足感还是很强的。</p><p><strong>接下来，就是你创作的过程了！</strong></p><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul><li><a href="https://www.bilibili.com/video/BV1Yb411a7ty?spm_id_from=333.1007.top_right_bar_window_history.content.click">手把手教你从0开始搭建自己的个人博客</a></li><li><a href="https://www.jianshu.com/p/4bcf2848b3fc">多台电脑使用Hexo</a></li></ul>]]></content>
     
@@ -157,12 +157,12 @@
     
     
     
-    <category term="Coding Notes" scheme="http://deskside.github.io/categories/Coding-Notes/"/>
+    <category term="Coding Notes" scheme="http://deskside.github.io/categories/coding-notes/"/>
     
     
-    <category term="GitHub" scheme="http://deskside.github.io/tags/GitHub/"/>
+    <category term="GitHub" scheme="http://deskside.github.io/tags/github/"/>
     
-    <category term="Hexo" scheme="http://deskside.github.io/tags/Hexo/"/>
+    <category term="Hexo" scheme="http://deskside.github.io/tags/hexo/"/>
     
   </entry>
   
@@ -213,10 +213,10 @@
     
     
     
-    <category term="Coding Notes" scheme="http://deskside.github.io/categories/Coding-Notes/"/>
+    <category term="Coding Notes" scheme="http://deskside.github.io/categories/coding-notes/"/>
     
     
-    <category term="Terminal" scheme="http://deskside.github.io/tags/Terminal/"/>
+    <category term="Terminal" scheme="http://deskside.github.io/tags/terminal/"/>
     
   </entry>
   
@@ -244,9 +244,9 @@
     
     <category term="人生" scheme="http://deskside.github.io/tags/%E4%BA%BA%E7%94%9F/"/>
     
-    <category term="焦虑" scheme="http://deskside.github.io/tags/%E7%84%A6%E8%99%91/"/>
-    
     <category term="写作" scheme="http://deskside.github.io/tags/%E5%86%99%E4%BD%9C/"/>
+    
+    <category term="焦虑" scheme="http://deskside.github.io/tags/%E7%84%A6%E8%99%91/"/>
     
   </entry>
   
