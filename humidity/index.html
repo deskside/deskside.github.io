@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta name="generator" content="Hexo 6.3.0">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.19.0">
+  <meta charset="utf-8">
+  
+
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://gcore.jsdelivr.net'>
+  <link rel="preconnect" href="https://gcore.jsdelivr.net" crossorigin>
+  <link rel='dns-prefetch' href='//unpkg.com'>
+
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  
+  <title>看不见的罪魁祸首：湿度 - Deskside</title>
+
+  
+    <meta name="description" content="暑期伴随着雨季一起到来。沿海地带，好看的天空虽然常见，但突如其来的暴雨也绝非稀客，乌云似乎对白云有着倾慕迷恋之情，要么紧跟其后，要么隔三差五便接踵而来。 酝酿着要开始写这段文字的时候，窗外正下着倾盆大雨。我试着关闭空调、打开了窗户，细碎的雨滴不停溅射进窗户内，像是雷神和雨神派来打探我在做什么的小差使。 开窗之前，放在桌面的温湿度计原本显示26.3℃、65%。我戴着一个巨大的头戴式耳机，在更新我博客">
+<meta property="og:type" content="article">
+<meta property="og:title" content="看不见的罪魁祸首：湿度">
+<meta property="og:url" content="http://deskside.github.io/humidity/index.html">
+<meta property="og:site_name" content="Deskside">
+<meta property="og:description" content="暑期伴随着雨季一起到来。沿海地带，好看的天空虽然常见，但突如其来的暴雨也绝非稀客，乌云似乎对白云有着倾慕迷恋之情，要么紧跟其后，要么隔三差五便接踵而来。 酝酿着要开始写这段文字的时候，窗外正下着倾盆大雨。我试着关闭空调、打开了窗户，细碎的雨滴不停溅射进窗户内，像是雷神和雨神派来打探我在做什么的小差使。 开窗之前，放在桌面的温湿度计原本显示26.3℃、65%。我戴着一个巨大的头戴式耳机，在更新我博客">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-07-31T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-08-11T04:43:35.376Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="健康">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <meta name="keywords" content="健康">
+
+  <!-- feed -->
+  
+    <link rel="alternate" href="/atom.xml" title="Deskside" type="application/atom+xml">
+  
+
+  
+    
+<link rel="stylesheet" href="/css/main.css">
+
+  
+
+  
+    <link rel="shortcut icon" href="/img/me.png">
+  
+
+  
+
+  
+
+
+  
+</head>
+
+<body>
+  
+
+
+
+
+  <div class='l_body' id='start'>
+    <aside class='l_left' layout='post'>
+    
+
+  
+
+<header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="/img/me.png" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">Deskside</div><div class="sub normal cap">I am Joey by deskside!</div><div class="sub hover cap" style="opacity:0"> 我是桌沿，你好鸭！</div></a></div>
+
+<nav class="menu dis-select"><a class="nav-item" href="/">Blogs</a><a class="nav-item" href="/about/">About</a></nav>
+</header>
+
+
+<div class="widgets">
+<widget class="widget-wrapper search"><div class="widget-body"><div class="search-wrapper" id="search"><form class="search-form"><input type="text" class="search-input" id="search-input" placeholder="Search"><svg t="1670596976048" class="icon search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2676" width="200" height="200"><path d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1C773.3 222.8 614.6 64 418.7 64S64 222.8 64 418.6c0 195.9 158.8 354.6 354.6 354.6 71.3 0 137.5-21.2 193.2-57.4 2 2.7 3.9 5.4 6.3 7.8L832.5 938c14.6 14.6 33.7 21.9 52.8 21.9 19.1 0 38.2-7.3 52.8-21.8 29.2-29.1 29.2-76.4 0.1-105.5M418.7 661.3C284.9 661.3 176 552.4 176 418.6 176 284.9 284.9 176 418.7 176c133.8 0 242.6 108.9 242.6 242.7 0 133.7-108.9 242.6-242.6 242.6" p-id="2677"></path></svg></form><div id="search-result"></div><div class="search-no-result">No Results!</div></div></div></widget>
+
+
+<widget class="widget-wrapper toc single" id="data-toc"><div class="widget-header cap dis-select"><span class="name">看不见的罪魁祸首：湿度</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A6%81%E6%B9%BF%E5%BA%A6%E5%B9%B2%E5%98%9B%EF%BC%8C%E6%B8%A9%E5%BA%A6%E8%BF%98%E4%B8%8D%E5%A4%9F%E5%90%97%EF%BC%9F"><span class="toc-text">要湿度干嘛，温度还不够吗？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E4%BB%AC%E5%8F%AF%E4%BB%A5%E6%94%B9%E5%8F%98%E6%B9%BF%E5%BA%A6"><span class="toc-text">我们可以改变湿度</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="toc-text">参考文献</span></a></li></ol></div></div></widget>
+
+
+
+
+</div>
+<footer class="footer dis-select"><div class="social-wrap"><a class="social" href="https://github.com/deskside" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://s2.loli.net/2022/11/08/BxmHlK6oeFp1sa5.png"/></a><a class="social" href="https://web.okjike.com/u/8a6595bb-1f2d-4b0e-a2a6-43a205f4d1a9" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://s2.loli.net/2022/11/08/Mq483RifVtl7dzI.png"/></a><a class="social" href="https://www.youtube.com/channel/UCDHwHAiT-jJ4AACLHir70Fg" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://s2.loli.net/2022/11/08/wylM6ImdsDzqY4Z.png"/></a></div></footer>
+
+    </aside>
+    <div class='l_main'>
+      
+
+      
+
+
+
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">Home</a><span class="sep"></span><a class="cap breadcrumb" href="/">Blog</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/newsletter/">Newsletter</a></div><div id="post-meta">Posted on&nbsp;<time datetime="2023-07-31T16:00:00.000Z">2023-08-01</time></div></div>
+
+<article class='md-text content post'>
+<h1 class="article-title"><span>看不见的罪魁祸首：湿度</span></h1>
+<p>暑期伴随着雨季一起到来。沿海地带，好看的天空虽然常见，但突如其来的暴雨也绝非稀客，乌云似乎对白云有着倾慕迷恋之情，要么紧跟其后，要么隔三差五便接踵而来。</p>
+<p>酝酿着要开始写这段文字的时候，窗外正下着倾盆大雨。我试着关闭空调、打开了窗户，细碎的雨滴不停溅射进窗户内，像是雷神和雨神派来打探我在做什么的小差使。</p>
+<p>开窗之前，放在桌面的温湿度计原本显示26.3℃、65%。我戴着一个巨大的头戴式耳机，在更新我博客的设置和内容。</p>
+<p>时间一分一秒跳动，我逐渐感到疲惫和闷热。奇怪，我中午明明睡了午觉、午饭也吃得颇有营养，没理由会在下午两三点还犯困。</p>
+<p>我瞅了一眼温湿度计，20分钟过去，两个数值都跳升了，变成了27.7℃、75%。</p>
+<p>难怪如此！温度的上浮是一方面，湿度或许是影响状态、情绪的更主要的「凶手」。</p>
+<h2 id="要湿度干嘛，温度还不够吗？"><a href="#要湿度干嘛，温度还不够吗？" class="headerlink" title="要湿度干嘛，温度还不够吗？"></a>要湿度干嘛，温度还不够吗？</h2><p>我赶紧打开了空调的除湿模式，关闭了窗户，重新坐下来码字。</p>
+<p>根据维基百科，湿度（Humidity）一般在气象学中指的是空气湿度，它是空气中水蒸气的含量，空气中液态或固态的水不算在湿度中。</p>
+<p>而相对湿度（relative humidity）是指单位体积空气中，实际水蒸气的分压与相同温度和体积下水饱和蒸气压的百分比。也就是绝对湿度与最高湿度之间的比，它的值显示水蒸气的饱和度有多高。</p>
+<p>在医学上，空气湿度与呼吸之间的关系非常紧密，在一定的湿度下氧气比较容易通过肺泡进入血液。因此，湿度过高影响人调节体温的排汗功能，人会感到闷热。气象学上还有一种指标「酷热指数」，是一种综合空气温度和相对湿度的热指标。</p>
+<p>人体通过排出汗液来达到降温的目的，在这个过程里，汗液中的水分得以蒸发，并且从人体带走热量。</p>
+<p>但是，当相对湿度较高时，水分的蒸发率就会降低。这意味着从身体中带走热量的过程变得缓慢，相对处于干燥空气中的情况，人体内就保留了更多的热量。</p>
+<p>基于在已知温度和湿度时的主观描述定义的计量方法，得出的指数可以将一组温度和湿度的组合换算成干燥空气中的一个相对更高的温度值。</p>
+<p>通常而言，湿度45%~55%是让人感觉舒适的，在50%的湿度下感觉最舒适。</p>
+<p><strong>因此，夏日炎炎使人眠，除了太阳高挂温度高以外，夏盹还常常与七八月多雨高湿离不开关系。</strong></p>
+<p>当我们从炎热的户外走进空调冷气充足的商场里，温度湿度同时下降，我们不感到舒服都不可能。</p>
+<h2 id="我们可以改变湿度"><a href="#我们可以改变湿度" class="headerlink" title="我们可以改变湿度"></a>我们可以改变湿度</h2><p>开始重视湿度对自己的影响，也是得益于一个朋友的指点。</p>
+<p>他在家里的时候会长期打开空调，我曾经询问他：这样做岂不是很费电，吹太久空调岂不是对身体也不太好？</p>
+<p>他解答道，他一般开的都是除湿模式，而不是大众常用的制冷模式。而且相对于花钱，他更希望自己在家的时候能是一个比较舒服的状态，而非汗如雨下、闷热烦躁、什么也不想做的状态。</p>
+<p>开始重视温湿度对自己舒适度、精神、情绪以及专注在内的多种状态的影响后，我买了一个温湿度计，这样我就能看到环境中的温湿度是多高，是否太干、太湿。</p>
+<p>在夏天，如果你想要省钱，你可以去逛商场，享受公共区域的免费空调。如果你需要专注做事，你可以带上书籍或电脑去公共图书馆、咖啡厅等有空调的地方专心。</p>
+<p>如果你想要改善自己所处环境中的湿度条件：</p>
+<ul>
+<li>在南方夏天，你可以考虑使用空调的除湿模式，我个人觉得比制冷模式要更加舒适。你还可以考虑除湿机（我并未用过，不知道好不好用，如果你有使用过，欢迎回信告诉我你的心得）</li>
+<li>在北方冬天，你可以考虑使用加湿器。</li>
+<li>在梅雨季节，衣柜里可以考虑放置除湿剂。</li>
+<li>面部和皮肤的保湿也很重要，可以考虑使用润肤或补水相关的产品。</li>
+</ul>
+<p>我们最离不开的「水」，从夏天的冰块到每日的饮用水，我们都不可能遗忘。反而是每天都「撞个满怀」的空气中的水蒸气，是最容易被我们忽略的。</p>
+<p>如果下次，你还感到疲乏困倦，试试看改善湿度，说不定也能像我坐下来安安静静地写完Newsletter一样，做好自己的事。</p>
+<p>那么，下次 2023-8-21 见！<br>桌沿</p>
+<hr>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://www.wikiwand.com/zh-cn/%E6%B9%BF%E5%BA%A6">湿度 - Wikiwand</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.wikiwand.com/zh-cn/%E7%9B%B8%E5%B0%8D%E6%BF%95%E5%BA%A6">相对湿度 - Wikiwand</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.wikiwand.com/zh-cn/%E9%85%B7%E7%86%B1%E6%8C%87%E6%95%B8">酷热指数 - Wikiwand</a></li>
+</ul>
+
+
+
+<div class="article-footer reveal fs14"><section id="license"><div class="header"><span>License</span></div><div class="body"><p>本文采用<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a>许可协议，转载请注明出处。<br> This essay is under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> license agreement. Please indicate the source when reproduced.</p>
+</div></section><section id="share"><div class="header"><span>Share</span></div><div class="body"><div class="link"><input class="copy-area" readonly="true" id="copy-link" value="http://deskside.github.io/humidity/" /></div><div class="social-wrap dis-select"><a class="social share-item wechat" onclick="util.toggle(&quot;qrcode-wechat&quot)"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/social/b32ef3da1162a.svg"/></a><a class="social share-item weibo" target="_blank" rel="external nofollow noopener noreferrer" href="https://service.weibo.com/share/share.php?url=http://deskside.github.io/humidity/&title=看不见的罪魁祸首：湿度 - Deskside&pics=img/health.png&summary=暑期伴随着雨季一起到来。沿海地带，好看的天空虽然常见，但突如其来的暴雨也绝非稀客，乌云似乎对白云有着倾慕迷恋之情，要么紧跟其后，要么隔三差五便接踵而来。
+酝酿着要开始写这段文字的时候，窗外正下着倾盆大雨。我试着关闭空调、打开了窗户，细..."><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/social/80c07e4dbb303.svg"/></a><a class="social share-item email" href="mailto:?subject=看不见的罪魁祸首：湿度 - Deskside&amp;body=http://deskside.github.io/humidity/"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/social/a1b00e20f425d.svg"/></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;Copied!&quot;)"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/social/8411ed322ced6.svg"/></a></div><div class="qrcode" id="qrcode-wechat" style="visibility:hidden;height:0"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=http://deskside.github.io/humidity/"/></div></div></section></div>
+
+</article>
+
+<div class="related-wrap reveal" id="read-next"><section class="body"><div class="item" id="prev"></div><div class="item" id="next"><div class="note">Older</div><a href="/orange-clouds/">一回头，一拢云，一瞬间</a></div></section></div>
+
+
+
+
+
+
+  <div class='related-wrap md-text reveal' id="comments">
+    <section class='header cmt-title cap theme'>
+      Join the discussion
+    </section>
+    <section class='body cmt-body giscus'>
+      
+
+<svg class="loading" style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg>
+
+<div id="giscus" data-repo="deskside/deskside.github.io" data-repo-id="R_kgDOHlARng" data-category="Announcements" data-category-id="DIC_kwDOHlARns4CSYZO" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous"></div>
+
+    </section>
+  </div>
+
+
+
+      
+<footer class="page-footer reveal fs12"><hr><div class="text"><p>本站由 <a href="/">@deskside</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar">Stellar</a> 主题创建。<br>This site is created with love by <a href="/">@deskside</a> , powered by <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/index.html">Hexo</a> theme <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar">Stellar</a>.<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。<br>All articles, unless otherwise stated, are in <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> license agreement. Please indicate the source when reproduced.<br>由于中国大陆网络政策的限制，部分图片可能无法顺利显示。<br>Due to the restrictions of Chinese mainland’s network policy, some pictures may not be displayed smoothly.</p>
+</div></footer>
+
+      <div class='float-panel mobile-only blur' style='display:none'>
+  <button type='button' class='sidebar-toggle mobile' onclick='sidebar.toggle()'>
+    <svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg>
+  </button>
+</div>
+
+    </div>
+  </div>
+  <div class='scripts'>
+    <script type="text/javascript">
+  const stellar = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    loadCSS: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    // 从 butterfly 和 volantis 获得灵感
+    loadScript: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      if (src.startsWith('/')){
+        src = stellar.config.root + src.substring(1);
+      }
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    // https://github.com/jerryc127/hexo-theme-butterfly
+    jQuery: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        stellar.loadScript(stellar.plugins.jQuery).then(fn)
+      } else {
+        fn()
+      }
+    }
+  };
+  stellar.version = '1.19.0';
+  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.19.0';
+  stellar.config = {
+    date_suffix: {
+      just: 'Just',
+      min: 'minutes ago',
+      hour: 'hours ago',
+      day: 'days ago',
+      month: 'months ago',
+    },
+    root : '/',
+  };
+
+  // required plugins (only load if needs)
+  stellar.plugins = {
+    jQuery: 'https://gcore.jsdelivr.net/npm/jquery@3.6.2/dist/jquery.min.js'
+  };
+
+  if ('local_search') {
+    stellar.search = {};
+    stellar.search.service = 'local_search';
+    if (stellar.search.service == 'local_search') {
+      let service_obj = Object.assign({}, {"field":"all","path":"/search.json","content":true,"sort":"-date"});
+      stellar.search[stellar.search.service] = service_obj;
+    }
+  }
+
+  // stellar js
+  stellar.plugins.stellar = Object.assign({"sites":"/js/plugins/sites.js","friends":"/js/plugins/friends.js","ghinfo":"/js/plugins/ghinfo.js","timeline":"/js/plugins/timeline.js","linkcard":"/js/plugins/linkcard.js","fcircle":"/js/plugins/fcircle.js","weibo":"/js/plugins/weibo.js"});
+
+  stellar.plugins.marked = Object.assign("https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js");
+  // optional plugins
+  if ('true' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js","transition":"blur"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.css","js":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.js"});
+  }
+  if ('' == 'true') {
+    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://gcore.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://gcore.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.fancybox = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js","css":"https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css","selector":".swiper-slide img"});
+  }
+  if ('false' == 'true') {
+    stellar.plugins.heti = Object.assign({"enable":false,"css":"https://unpkg.com/heti@0.9.2/umd/heti.min.css","js":"https://unpkg.com/heti@0.9.2/umd/heti-addon.min.js"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.copycode = Object.assign({"enable":true,"js":"/js/plugins/copycode.js","default_text":"Copy","success_text":"Copied"});
+  }
+</script>
+
+<!-- required -->
+
+  
+<script src="/js/main.js" async></script>
+
+
+
+<!-- optional -->
+
+  <script>
+  function loadJS() {
+    const els = document.querySelectorAll("#comments #giscus");
+    if (els.length === 0) return;
+    els.forEach((el, i) => {
+      try {
+        el.innerHTML = '';
+      } catch (error) {
+        console.log(error);
+      }
+      var script = document.createElement('script');
+      script.src = 'https://giscus.app/client.js';
+      script.async = true;
+      for (let key of Object.keys(el.attributes)) {
+        let attr = el.attributes[key];
+        if (['class', 'id'].includes(attr.name) === false) {
+          script.setAttribute(attr.name, attr.value);
+        }
+      }
+      el.appendChild(script);
+    });
+  }
+  window.addEventListener('DOMContentLoaded', (event) => {
+    loadJS();
+  });
+</script>
+
+
+
+
+<!-- inject -->
+
+
+  </div>
+</body>
+</html>
