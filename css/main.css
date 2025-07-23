@@ -1491,7 +1491,7 @@ a.button.start.gradient {
 code {
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
-  font-family: Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif;
+  font-family: Menlo, Monaco, Consolas, system-ui, monospace, sans-serif;
 }
 p>code:not([class]),
 li>code:not([class]) {
@@ -1874,7 +1874,7 @@ table:not([class]) {
   outline: none;
 }
 html {
-  font-family: system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif;
+  font-family: sans-serif, system-ui, "Microsoft Yahei", "Segoe UI", Arial;
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -1901,7 +1901,7 @@ input {
 }
 input.copy-area {
   display: block;
-  font-family: Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif;
+  font-family: Menlo, Monaco, Consolas, system-ui, monospace, sans-serif;
   font-size: 0.8125rem;
   font-weight: 700;
   color: var(--text-p3);
@@ -2862,7 +2862,7 @@ div.toast.show {
   background-image: url("https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/arrow/f049bbd4e88ec.svg");
 }
 .paginator-wrap .current {
-  font-family: Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif;
+  font-family: Menlo, Monaco, Consolas, system-ui, monospace, sans-serif;
   background: var(--block);
 }
 .paginator-wrap .extend {
@@ -4367,7 +4367,7 @@ a.tag-plugin.button:hover {
   border-radius: 4px;
   background: hsla(var(--hue) var(--sat) var(--light) / 0.2);
   color: var(--theme);
-  font-family: Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif;
+  font-family: Menlo, Monaco, Consolas, system-ui, monospace, sans-serif;
   font-size: 0.8125rem;
   font-weight: 700;
   flex-shrink: 0;
@@ -5480,7 +5480,7 @@ p>strong>span.tag-plugin.icon {
   border-bottom-width: 2px;
   background: var(--card);
   padding: 2px 4px 1px 4px;
-  font-family: Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif;
+  font-family: Menlo, Monaco, Consolas, system-ui, monospace, sans-serif;
   font-weight: 700;
 }
 .md-text psw {
@@ -5512,7 +5512,7 @@ p>strong>span.tag-plugin.icon {
   color: var(--theme);
   line-height: 1;
   font-weight: 700;
-  font-family: Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif;
+  font-family: Menlo, Monaco, Consolas, system-ui, monospace, sans-serif;
 }
 .md-text h1 sup,
 .md-text h2 sup,
@@ -7073,7 +7073,7 @@ details.toc[open] >div.body section .header+.doc_tree {
 .search-wrapper .search-input {
   width: 100%;
   box-sizing: border-box;
-  font-family: system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif;
+  font-family: sans-serif, system-ui, "Microsoft Yahei", "Segoe UI", Arial;
   font-size: 0.875rem;
   padding: 12px 0;
   color: var(--text);
@@ -8054,7 +8054,7 @@ details.toc[open] >div.body section .header+.doc_tree {
 }
 .post-list #archive .archive-header {
   display: inline-block;
-  font-family: Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif;
+  font-family: Menlo, Monaco, Consolas, system-ui, monospace, sans-serif;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 0.5em;
@@ -8085,7 +8085,7 @@ details.toc[open] >div.body section .header+.doc_tree {
   border-bottom: 1px dashed var(--text-meta);
 }
 .post-list #archive a.post time {
-  font-family: Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif;
+  font-family: Menlo, Monaco, Consolas, system-ui, monospace, sans-serif;
   margin-right: 1em;
   font-weight: 700;
   flex-shrink: 0;
@@ -8126,7 +8126,7 @@ details.toc[open] >div.body section .header+.doc_tree {
 }
 .post-list #cats a.cat .badge {
   font-weight: 700;
-  font-family: Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif;
+  font-family: Menlo, Monaco, Consolas, system-ui, monospace, sans-serif;
   opacity: 0.5;
   font-size: 0.75rem;
 }
